@@ -46,6 +46,20 @@ def _print_result(label: str, result: AgentState) -> None:
         print(f"explanation      : {result.explanation}")
 
 
+def _run(graph, label: str, sample: AgentState) -> AgentState:
+    """Invoke the graph with LangSmith-friendly run name, tags, and metadata."""
+    config = {
+        "run_name": label,
+        "tags": [sample.video_id],
+        "metadata": {
+            "video_id": sample.video_id,
+            "age": sample.user_data.age,
+            "symptoms": sample.user_data.symptoms,
+        },
+    }
+    return AgentState(**graph.invoke(sample, config=config))
+
+
 def _parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Run the triage agent on a single case.")
     p.add_argument("--video", help="Mock video id: video_normal | video_aom | video_blurry")
@@ -64,12 +78,12 @@ def main() -> None:
             video_id=args.video,
             user_data=UserData(age=args.age, symptoms=args.symptoms, prior_history=args.history),
         )
-        result = AgentState(**graph.invoke(sample))
+        result = _run(graph, "CLI case", sample)
         _print_result("CLI case", result)
         return
 
     for label, sample in SAMPLES:
-        result = AgentState(**graph.invoke(sample))
+        result = _run(graph, label, sample)
         _print_result(label, result)
 
 

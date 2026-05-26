@@ -69,7 +69,7 @@ The full diagram with cloud / HIPAA boundaries and the decision table for Node 6
 | LLM           | Claude (via `langchain-anthropic`) | Real                              |
 | Vector store  | ChromaDB                           | Mocked (`src/mock_services.py`)   |
 | Audit DB      | PostgreSQL                         | Not implemented                   |
-| Observability | LangSmith                          | Not wired up                      |
+| Observability | LangSmith                          | Implemented (auto-tracing)        |
 | Deployment    | Docker + Kubernetes                | Not implemented                   |
 
 
@@ -105,6 +105,28 @@ pip install -r requirements.txt
 cp .env.example .env
 # then open .env and paste your real ANTHROPIC_API_KEY
 ```
+
+---
+
+## Observability (LangSmith)
+
+LangSmith tracing is wired in but optional. If `LANGSMITH_API_KEY` is missing, tracing is silently off and the app runs unchanged.
+
+To turn it on, add these to your `.env`:
+
+```
+LANGSMITH_TRACING=true
+LANGSMITH_API_KEY=lsv2_pt_xxx
+LANGSMITH_PROJECT=triage-agent-dev
+```
+
+Then each `python -m src.main` run shows up at `https://smith.langchain.com` under the project name, with:
+
+- One top-level span per case, named after its label (e.g. `Healthy adult, clean image`).
+- 6 child spans, one per node. The Claude call is nested inside `node5_llm` with full prompt, response, tokens, latency, and cost.
+- Each run tagged with `video_id` and carrying `age` + `symptoms` as metadata, so you can filter runs in the LangSmith UI.
+
+LangSmith is observability only - it is not the system of record. In production, decisions still get written to PostgreSQL for audit.
 
 ---
 
