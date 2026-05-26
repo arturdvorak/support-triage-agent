@@ -1,0 +1,143 @@
+# Triage Agent
+
+A 6-step LangGraph workflow that turns a CNN's ear-image prediction into a plain-language explanation plus a clear next-step decision (`auto_clear`, `escalate_*`, or `re_capture`).
+
+---
+
+## Problem and Solution
+
+**Problem.** A mobile app captures a video of a patient's eardrum. A CNN can label the image, but a raw label (e.g. `aom, 0.88`) is not useful to the patient and is hard to audit in a regulated healthcare setting.
+
+**Solution.** The triage agent takes the CNN output plus patient context (age, symptoms, history), looks up similar past cases, asks an LLM to write a plain-language explanation grounded in those cases, and applies deterministic rules to produce one final decision. Every step's input and output is saved so the decision can be replayed for audit.
+
+**Key split:**
+
+- The **CNN owns the diagnosis** (predictable, validated, the only thing approved to call a finding).
+- The **LLM only explains and routes** (no clinical claims, no hallucinated diagnoses).
+
+---
+
+## Architecture Overview
+
+The agent runs as a fixed 6-node graph. Node 2 can short-circuit to `re_capture`; otherwise the flow runs through all 6 nodes.
+
+
+| Node | Name                      | What it does                                                                                 |
+| ---- | ------------------------- | -------------------------------------------------------------------------------------------- |
+| 1    | CNN Inference             | Calls the CNN once; stores visibility, quality flags, diagnosis, confidences                 |
+| 2    | Quality + Visibility Gate | If eardrum not fully visible or any quality flag fired, set decision = `re_capture` and stop |
+| 3    | Risk Scoring              | Combine diagnosis with age, symptoms, prior history into a 0-1 risk score                    |
+| 4    | Similar Case Retrieval    | Look up past cases with the same diagnosis (mock today, ChromaDB in production)              |
+| 5    | LLM Explanation           | Claude writes a 2-3 sentence explanation referencing the retrieved case IDs                  |
+| 6    | Escalation Decision       | Rule-based check over 3 signals (CNN, retrieved cases, LLM uncertainty); outputs final label |
+
+
+End-to-end flow (production target):
+
+```
+Mobile app
+    | (HTTPS, video + metadata)
+    v
+FastAPI + Pydantic   <- input validation, auth
+    |
+    v
+LangGraph agent
+    | Node 1: CNN Inference          (one call, 3 outputs)
+    | Node 2: Quality + Visibility   (may exit to re_capture)
+    | Node 3: Risk Scoring
+    | Node 4: Similar Case Retrieval (ChromaDB)
+    | Node 5: LLM Explanation        (Claude via LangChain)
+    | Node 6: Escalation Decision    (rules)
+    v
+Final decision + explanation -> mobile app
+                          \-> PostgreSQL (audit log)
+                          \-> LangSmith (trace)
+```
+
+The full diagram with cloud / HIPAA boundaries and the decision table for Node 6 lives in `[interview-story/q2_session2_technical_approach.md](interview-story/q2_session2_technical_approach.md)`.
+
+---
+
+## Tech Stack
+
+
+| Layer         | Technology                         | Status in this repo               |
+| ------------- | ---------------------------------- | --------------------------------- |
+| API           | FastAPI + Pydantic                 | Not implemented (CLI runner only) |
+| Orchestration | LangGraph                          | Implemented                       |
+| Diagnosis     | EfficientNetV2 multi-task CNN      | Mocked (`src/mock_services.py`)   |
+| LLM           | Claude (via `langchain-anthropic`) | Real                              |
+| Vector store  | ChromaDB                           | Mocked (`src/mock_services.py`)   |
+| Audit DB      | PostgreSQL                         | Not implemented                   |
+| Observability | LangSmith                          | Not wired up                      |
+| Deployment    | Docker + Kubernetes                | Not implemented                   |
+
+
+The prototype focuses on the agent loop. Everything outside the agent (API, DB, deployment) is described in the Q2 doc but not built here.
+
+---
+
+## Project Structure
+
+```
+triage-agent/
+  src/
+    main.py            # CLI runner: 3 hardcoded samples or one --video case
+    graph.py           # LangGraph wiring of the 6 nodes
+    state.py           # Pydantic AgentState (shared across all nodes)
+    nodes.py           # The 6 node functions + LLM prompt
+    mock_services.py   # Fake CNN and fake case retrieval
+  interview-story/     # Q1 (business) and Q2 (technical) write-ups
+  requirements.txt
+  .env.example         # ANTHROPIC_API_KEY placeholder
+```
+
+---
+
+## Setup
+
+Requires Python 3.10 or newer.
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+# then open .env and paste your real ANTHROPIC_API_KEY
+```
+
+---
+
+## How to Run
+
+**Default: run all 3 hardcoded samples** (healthy adult, infant with AOM, blurry image).
+
+```bash
+python -m src.main
+```
+
+**Custom: run a single case from the CLI.**
+
+```bash
+python -m src.main --video video_aom --age 1 --symptoms high_fever ear_pain
+```
+
+Available mock `--video` values: `video_normal`, `video_aom`, `video_blurry`.
+
+Each run prints the final `decision`, the `risk_score`, the LLM `explanation`, and (for `re_capture` cases) the user-facing `recapture_reason`.
+
+---
+
+## What Is Mocked vs Production
+
+
+| Component       | This repo                                               | Production target                                      |
+| --------------- | ------------------------------------------------------- | ------------------------------------------------------ |
+| CNN inference   | `mock_cnn()` returns canned output per `video_id`       | Real EfficientNetV2 served behind an internal endpoint |
+| Case retrieval  | `mock_retrieval()` returns 3 canned cases per diagnosis | ChromaDB lookup by image embedding                     |
+| LLM explanation | Real Claude call via `langchain-anthropic`              | Same                                                   |
+| API             | None (CLI only)                                         | FastAPI + Pydantic with auth and input validation      |
+| Persistence     | None (in-memory state)                                  | PostgreSQL for decisions, LangSmith for traces         |
+
+
+The mocks keep the same input/output shape as the real services, so swapping them in later means changing the function body only - not the call sites.
