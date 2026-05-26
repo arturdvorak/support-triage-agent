@@ -3,6 +3,8 @@
 Each node is a function: (state) -> dict of fields to merge into state.
 """
 
+import os
+
 from dotenv import load_dotenv
 from langchain_anthropic import ChatAnthropic
 from pydantic import BaseModel, Field
@@ -11,6 +13,11 @@ from src.state import AgentState, SimilarCase
 from src.mock_services import mock_cnn, mock_retrieval
 
 load_dotenv()
+
+# Safe-default: without an API key, force tracing off so LangChain does not
+# try to ship traces and warn on every call.
+if not os.getenv("LANGSMITH_API_KEY"):
+    os.environ["LANGSMITH_TRACING"] = "false"
 
 
 def node1_cnn_inference(state: AgentState) -> dict:
