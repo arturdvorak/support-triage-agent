@@ -1,0 +1,1196 @@
+[
+  {
+    "case_id": "c001",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 0-year-old patient presenting with mild_itch. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 0,
+    "age_band": "infant",
+    "symptoms": [
+      "mild_itch"
+    ]
+  },
+  {
+    "case_id": "c002",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 4-year-old patient presenting with ear_pain. Managed with amoxicillin 10d; outcome: resolved after antibiotics.",
+    "treatment": "amoxicillin 10d",
+    "outcome": "resolved after antibiotics",
+    "age": 4,
+    "age_band": "child",
+    "symptoms": [
+      "ear_pain"
+    ]
+  },
+  {
+    "case_id": "c003",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 0-year-old patient presenting with ear_drainage. Managed with tube placement; outcome: ongoing.",
+    "treatment": "tube placement",
+    "outcome": "ongoing",
+    "age": 0,
+    "age_band": "infant",
+    "symptoms": [
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c004",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 84-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 84,
+    "age_band": "senior",
+    "symptoms": []
+  },
+  {
+    "case_id": "c005",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 9-year-old patient presenting with ear_pain, high_fever. Managed with amoxicillin 10d; outcome: resolved.",
+    "treatment": "amoxicillin 10d",
+    "outcome": "resolved",
+    "age": 9,
+    "age_band": "child",
+    "symptoms": [
+      "ear_pain",
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c006",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 39-year-old patient presenting with ear_pain, ear_drainage. Managed with tube placement; outcome: ongoing.",
+    "treatment": "tube placement",
+    "outcome": "ongoing",
+    "age": 39,
+    "age_band": "adult",
+    "symptoms": [
+      "ear_pain",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c007",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 13-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 13,
+    "age_band": "teen",
+    "symptoms": []
+  },
+  {
+    "case_id": "c008",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 15-year-old patient presenting with ear_pain, high_fever. Managed with amoxicillin 10d; outcome: resolved after antibiotics.",
+    "treatment": "amoxicillin 10d",
+    "outcome": "resolved after antibiotics",
+    "age": 15,
+    "age_band": "teen",
+    "symptoms": [
+      "ear_pain",
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c009",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 68-year-old patient presenting with hearing_loss, ear_drainage. Managed with ENT referral; outcome: resolved after tubes.",
+    "treatment": "ENT referral",
+    "outcome": "resolved after tubes",
+    "age": 68,
+    "age_band": "senior",
+    "symptoms": [
+      "hearing_loss",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c010",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 76-year-old patient presenting with mild_itch. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 76,
+    "age_band": "senior",
+    "symptoms": [
+      "mild_itch"
+    ]
+  },
+  {
+    "case_id": "c011",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 0-year-old patient presenting with ear_pain, high_fever. Managed with amoxicillin 10d; outcome: resolved.",
+    "treatment": "amoxicillin 10d",
+    "outcome": "resolved",
+    "age": 0,
+    "age_band": "infant",
+    "symptoms": [
+      "ear_pain",
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c012",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 1-year-old patient presenting with ear_pain, ear_drainage. Managed with ongoing monitoring; outcome: resolved after tubes.",
+    "treatment": "ongoing monitoring",
+    "outcome": "resolved after tubes",
+    "age": 1,
+    "age_band": "infant",
+    "symptoms": [
+      "ear_pain",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c013",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 7-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 7,
+    "age_band": "child",
+    "symptoms": []
+  },
+  {
+    "case_id": "c014",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 0-year-old patient presenting with ear_pain, fever. Managed with amoxicillin 7d; outcome: resolved after antibiotics.",
+    "treatment": "amoxicillin 7d",
+    "outcome": "resolved after antibiotics",
+    "age": 0,
+    "age_band": "infant",
+    "symptoms": [
+      "ear_pain",
+      "fever"
+    ]
+  },
+  {
+    "case_id": "c015",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 35-year-old patient presenting with hearing_loss. Managed with antibiotic ear drops; outcome: ongoing.",
+    "treatment": "antibiotic ear drops",
+    "outcome": "ongoing",
+    "age": 35,
+    "age_band": "adult",
+    "symptoms": [
+      "hearing_loss"
+    ]
+  },
+  {
+    "case_id": "c016",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 2-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 2,
+    "age_band": "child",
+    "symptoms": []
+  },
+  {
+    "case_id": "c017",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 0-year-old patient presenting with ear_pain, high_fever. Managed with amoxicillin 7d; outcome: resolved after antibiotics.",
+    "treatment": "amoxicillin 7d",
+    "outcome": "resolved after antibiotics",
+    "age": 0,
+    "age_band": "infant",
+    "symptoms": [
+      "ear_pain",
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c018",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 59-year-old patient presenting with hearing_loss, ear_drainage. Managed with tube placement; outcome: resolved after tubes.",
+    "treatment": "tube placement",
+    "outcome": "resolved after tubes",
+    "age": 59,
+    "age_band": "adult",
+    "symptoms": [
+      "hearing_loss",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c019",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 5-year-old patient presenting with mild_itch. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 5,
+    "age_band": "child",
+    "symptoms": [
+      "mild_itch"
+    ]
+  },
+  {
+    "case_id": "c020",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 77-year-old patient presenting with ear_pain, high_fever. Managed with amoxicillin 7d; outcome: resolved.",
+    "treatment": "amoxicillin 7d",
+    "outcome": "resolved",
+    "age": 77,
+    "age_band": "senior",
+    "symptoms": [
+      "ear_pain",
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c021",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 80-year-old patient presenting with ear_drainage. Managed with ENT referral; outcome: ongoing.",
+    "treatment": "ENT referral",
+    "outcome": "ongoing",
+    "age": 80,
+    "age_band": "senior",
+    "symptoms": [
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c022",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 12-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 12,
+    "age_band": "child",
+    "symptoms": []
+  },
+  {
+    "case_id": "c023",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 42-year-old patient presenting with high_fever. Managed with watchful waiting; outcome: resolved.",
+    "treatment": "watchful waiting",
+    "outcome": "resolved",
+    "age": 42,
+    "age_band": "adult",
+    "symptoms": [
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c024",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 1-year-old patient presenting with ear_pain, ear_drainage. Managed with ENT referral; outcome: resolved after tubes.",
+    "treatment": "ENT referral",
+    "outcome": "resolved after tubes",
+    "age": 1,
+    "age_band": "infant",
+    "symptoms": [
+      "ear_pain",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c025",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 28-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 28,
+    "age_band": "adult",
+    "symptoms": []
+  },
+  {
+    "case_id": "c026",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 89-year-old patient presenting with ear_pain, fever. Managed with amoxicillin 10d; outcome: resolved after antibiotics.",
+    "treatment": "amoxicillin 10d",
+    "outcome": "resolved after antibiotics",
+    "age": 89,
+    "age_band": "senior",
+    "symptoms": [
+      "ear_pain",
+      "fever"
+    ]
+  },
+  {
+    "case_id": "c027",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 84-year-old patient presenting with hearing_loss. Managed with tube placement; outcome: resolved after tubes.",
+    "treatment": "tube placement",
+    "outcome": "resolved after tubes",
+    "age": 84,
+    "age_band": "senior",
+    "symptoms": [
+      "hearing_loss"
+    ]
+  },
+  {
+    "case_id": "c028",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 10-year-old patient presenting with mild_itch. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 10,
+    "age_band": "child",
+    "symptoms": [
+      "mild_itch"
+    ]
+  },
+  {
+    "case_id": "c029",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 19-year-old patient presenting with ear_pain. Managed with watchful waiting; outcome: resolved after antibiotics.",
+    "treatment": "watchful waiting",
+    "outcome": "resolved after antibiotics",
+    "age": 19,
+    "age_band": "adult",
+    "symptoms": [
+      "ear_pain"
+    ]
+  },
+  {
+    "case_id": "c030",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 2-year-old patient presenting with hearing_loss. Managed with ENT referral; outcome: ongoing.",
+    "treatment": "ENT referral",
+    "outcome": "ongoing",
+    "age": 2,
+    "age_band": "child",
+    "symptoms": [
+      "hearing_loss"
+    ]
+  },
+  {
+    "case_id": "c031",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 22-year-old patient presenting with mild_itch. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 22,
+    "age_band": "adult",
+    "symptoms": [
+      "mild_itch"
+    ]
+  },
+  {
+    "case_id": "c032",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 53-year-old patient presenting with ear_pain, fever. Managed with watchful waiting; outcome: resolved after antibiotics.",
+    "treatment": "watchful waiting",
+    "outcome": "resolved after antibiotics",
+    "age": 53,
+    "age_band": "adult",
+    "symptoms": [
+      "ear_pain",
+      "fever"
+    ]
+  },
+  {
+    "case_id": "c033",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 10-year-old patient presenting with hearing_loss. Managed with antibiotic ear drops; outcome: resolved after tubes.",
+    "treatment": "antibiotic ear drops",
+    "outcome": "resolved after tubes",
+    "age": 10,
+    "age_band": "child",
+    "symptoms": [
+      "hearing_loss"
+    ]
+  },
+  {
+    "case_id": "c034",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 16-year-old patient presenting with mild_itch. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 16,
+    "age_band": "teen",
+    "symptoms": [
+      "mild_itch"
+    ]
+  },
+  {
+    "case_id": "c035",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 5-year-old patient presenting with ear_pain. Managed with watchful waiting; outcome: resolved.",
+    "treatment": "watchful waiting",
+    "outcome": "resolved",
+    "age": 5,
+    "age_band": "child",
+    "symptoms": [
+      "ear_pain"
+    ]
+  },
+  {
+    "case_id": "c036",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 82-year-old patient presenting with hearing_loss. Managed with tube placement; outcome: ongoing.",
+    "treatment": "tube placement",
+    "outcome": "ongoing",
+    "age": 82,
+    "age_band": "senior",
+    "symptoms": [
+      "hearing_loss"
+    ]
+  },
+  {
+    "case_id": "c037",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 0-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 0,
+    "age_band": "infant",
+    "symptoms": []
+  },
+  {
+    "case_id": "c038",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 13-year-old patient presenting with ear_pain, fever. Managed with watchful waiting; outcome: resolved after antibiotics.",
+    "treatment": "watchful waiting",
+    "outcome": "resolved after antibiotics",
+    "age": 13,
+    "age_band": "teen",
+    "symptoms": [
+      "ear_pain",
+      "fever"
+    ]
+  },
+  {
+    "case_id": "c039",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 10-year-old patient presenting with hearing_loss. Managed with ongoing monitoring; outcome: ongoing.",
+    "treatment": "ongoing monitoring",
+    "outcome": "ongoing",
+    "age": 10,
+    "age_band": "child",
+    "symptoms": [
+      "hearing_loss"
+    ]
+  },
+  {
+    "case_id": "c040",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 44-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 44,
+    "age_band": "adult",
+    "symptoms": []
+  },
+  {
+    "case_id": "c041",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 40-year-old patient presenting with high_fever. Managed with ibuprofen + observation; outcome: resolved after antibiotics.",
+    "treatment": "ibuprofen + observation",
+    "outcome": "resolved after antibiotics",
+    "age": 40,
+    "age_band": "adult",
+    "symptoms": [
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c042",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 0-year-old patient presenting with ear_drainage. Managed with ongoing monitoring; outcome: resolved after tubes.",
+    "treatment": "ongoing monitoring",
+    "outcome": "resolved after tubes",
+    "age": 0,
+    "age_band": "infant",
+    "symptoms": [
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c043",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 0-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 0,
+    "age_band": "infant",
+    "symptoms": []
+  },
+  {
+    "case_id": "c044",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 8-year-old patient presenting with ear_pain, fever. Managed with watchful waiting; outcome: resolved after antibiotics.",
+    "treatment": "watchful waiting",
+    "outcome": "resolved after antibiotics",
+    "age": 8,
+    "age_band": "child",
+    "symptoms": [
+      "ear_pain",
+      "fever"
+    ]
+  },
+  {
+    "case_id": "c045",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 3-year-old patient presenting with hearing_loss, ear_drainage. Managed with ENT referral; outcome: ongoing.",
+    "treatment": "ENT referral",
+    "outcome": "ongoing",
+    "age": 3,
+    "age_band": "child",
+    "symptoms": [
+      "hearing_loss",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c046",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 65-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 65,
+    "age_band": "senior",
+    "symptoms": []
+  },
+  {
+    "case_id": "c047",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 49-year-old patient presenting with high_fever. Managed with amoxicillin 7d; outcome: resolved after antibiotics.",
+    "treatment": "amoxicillin 7d",
+    "outcome": "resolved after antibiotics",
+    "age": 49,
+    "age_band": "adult",
+    "symptoms": [
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c048",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 0-year-old patient presenting with hearing_loss, ear_drainage. Managed with ENT referral; outcome: resolved after tubes.",
+    "treatment": "ENT referral",
+    "outcome": "resolved after tubes",
+    "age": 0,
+    "age_band": "infant",
+    "symptoms": [
+      "hearing_loss",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c049",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 16-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 16,
+    "age_band": "teen",
+    "symptoms": []
+  },
+  {
+    "case_id": "c050",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 5-year-old patient presenting with ear_pain, high_fever. Managed with amoxicillin 7d; outcome: resolved.",
+    "treatment": "amoxicillin 7d",
+    "outcome": "resolved",
+    "age": 5,
+    "age_band": "child",
+    "symptoms": [
+      "ear_pain",
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c051",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 88-year-old patient presenting with ear_drainage. Managed with antibiotic ear drops; outcome: ongoing.",
+    "treatment": "antibiotic ear drops",
+    "outcome": "ongoing",
+    "age": 88,
+    "age_band": "senior",
+    "symptoms": [
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c052",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 1-year-old patient presenting with mild_itch. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 1,
+    "age_band": "infant",
+    "symptoms": [
+      "mild_itch"
+    ]
+  },
+  {
+    "case_id": "c053",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 67-year-old patient presenting with ear_pain, fever. Managed with amoxicillin 10d; outcome: resolved.",
+    "treatment": "amoxicillin 10d",
+    "outcome": "resolved",
+    "age": 67,
+    "age_band": "senior",
+    "symptoms": [
+      "ear_pain",
+      "fever"
+    ]
+  },
+  {
+    "case_id": "c054",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 8-year-old patient presenting with ear_drainage. Managed with tube placement; outcome: ongoing.",
+    "treatment": "tube placement",
+    "outcome": "ongoing",
+    "age": 8,
+    "age_band": "child",
+    "symptoms": [
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c055",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 67-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 67,
+    "age_band": "senior",
+    "symptoms": []
+  },
+  {
+    "case_id": "c056",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 12-year-old patient presenting with ear_pain, high_fever. Managed with amoxicillin 7d; outcome: resolved after antibiotics.",
+    "treatment": "amoxicillin 7d",
+    "outcome": "resolved after antibiotics",
+    "age": 12,
+    "age_band": "child",
+    "symptoms": [
+      "ear_pain",
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c057",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 26-year-old patient presenting with ear_pain, ear_drainage. Managed with ongoing monitoring; outcome: resolved after tubes.",
+    "treatment": "ongoing monitoring",
+    "outcome": "resolved after tubes",
+    "age": 26,
+    "age_band": "adult",
+    "symptoms": [
+      "ear_pain",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c058",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 0-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 0,
+    "age_band": "infant",
+    "symptoms": []
+  },
+  {
+    "case_id": "c059",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 71-year-old patient presenting with ear_pain, high_fever. Managed with amoxicillin 7d; outcome: resolved after antibiotics.",
+    "treatment": "amoxicillin 7d",
+    "outcome": "resolved after antibiotics",
+    "age": 71,
+    "age_band": "senior",
+    "symptoms": [
+      "ear_pain",
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c060",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 0-year-old patient presenting with ear_pain, ear_drainage. Managed with antibiotic ear drops; outcome: ongoing.",
+    "treatment": "antibiotic ear drops",
+    "outcome": "ongoing",
+    "age": 0,
+    "age_band": "infant",
+    "symptoms": [
+      "ear_pain",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c061",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 52-year-old patient presenting with mild_itch. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 52,
+    "age_band": "adult",
+    "symptoms": [
+      "mild_itch"
+    ]
+  },
+  {
+    "case_id": "c062",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 74-year-old patient presenting with ear_pain. Managed with amoxicillin 7d; outcome: resolved after antibiotics.",
+    "treatment": "amoxicillin 7d",
+    "outcome": "resolved after antibiotics",
+    "age": 74,
+    "age_band": "senior",
+    "symptoms": [
+      "ear_pain"
+    ]
+  },
+  {
+    "case_id": "c063",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 0-year-old patient presenting with hearing_loss. Managed with antibiotic ear drops; outcome: resolved after tubes.",
+    "treatment": "antibiotic ear drops",
+    "outcome": "resolved after tubes",
+    "age": 0,
+    "age_band": "infant",
+    "symptoms": [
+      "hearing_loss"
+    ]
+  },
+  {
+    "case_id": "c064",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 71-year-old patient presenting with mild_itch. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 71,
+    "age_band": "senior",
+    "symptoms": [
+      "mild_itch"
+    ]
+  },
+  {
+    "case_id": "c065",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 17-year-old patient presenting with high_fever. Managed with watchful waiting; outcome: resolved.",
+    "treatment": "watchful waiting",
+    "outcome": "resolved",
+    "age": 17,
+    "age_band": "teen",
+    "symptoms": [
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c066",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 1-year-old patient presenting with ear_pain, ear_drainage. Managed with ENT referral; outcome: ongoing.",
+    "treatment": "ENT referral",
+    "outcome": "ongoing",
+    "age": 1,
+    "age_band": "infant",
+    "symptoms": [
+      "ear_pain",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c067",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 14-year-old patient presenting with mild_itch. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 14,
+    "age_band": "teen",
+    "symptoms": [
+      "mild_itch"
+    ]
+  },
+  {
+    "case_id": "c068",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 53-year-old patient presenting with high_fever. Managed with amoxicillin 10d; outcome: resolved.",
+    "treatment": "amoxicillin 10d",
+    "outcome": "resolved",
+    "age": 53,
+    "age_band": "adult",
+    "symptoms": [
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c069",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 0-year-old patient presenting with ear_drainage. Managed with antibiotic ear drops; outcome: ongoing.",
+    "treatment": "antibiotic ear drops",
+    "outcome": "ongoing",
+    "age": 0,
+    "age_band": "infant",
+    "symptoms": [
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c070",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 26-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 26,
+    "age_band": "adult",
+    "symptoms": []
+  },
+  {
+    "case_id": "c071",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 1-year-old patient presenting with ear_pain, fever. Managed with amoxicillin 7d; outcome: resolved.",
+    "treatment": "amoxicillin 7d",
+    "outcome": "resolved",
+    "age": 1,
+    "age_band": "infant",
+    "symptoms": [
+      "ear_pain",
+      "fever"
+    ]
+  },
+  {
+    "case_id": "c072",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 17-year-old patient presenting with hearing_loss, ear_drainage. Managed with tube placement; outcome: ongoing.",
+    "treatment": "tube placement",
+    "outcome": "ongoing",
+    "age": 17,
+    "age_band": "teen",
+    "symptoms": [
+      "hearing_loss",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c073",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 4-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 4,
+    "age_band": "child",
+    "symptoms": []
+  },
+  {
+    "case_id": "c074",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 16-year-old patient presenting with ear_pain, fever. Managed with watchful waiting; outcome: resolved.",
+    "treatment": "watchful waiting",
+    "outcome": "resolved",
+    "age": 16,
+    "age_band": "teen",
+    "symptoms": [
+      "ear_pain",
+      "fever"
+    ]
+  },
+  {
+    "case_id": "c075",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 1-year-old patient presenting with ear_drainage. Managed with ongoing monitoring; outcome: ongoing.",
+    "treatment": "ongoing monitoring",
+    "outcome": "ongoing",
+    "age": 1,
+    "age_band": "infant",
+    "symptoms": [
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c076",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 9-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 9,
+    "age_band": "child",
+    "symptoms": []
+  },
+  {
+    "case_id": "c077",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 2-year-old patient presenting with ear_pain, fever. Managed with ibuprofen + observation; outcome: resolved after antibiotics.",
+    "treatment": "ibuprofen + observation",
+    "outcome": "resolved after antibiotics",
+    "age": 2,
+    "age_band": "child",
+    "symptoms": [
+      "ear_pain",
+      "fever"
+    ]
+  },
+  {
+    "case_id": "c078",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 13-year-old patient presenting with ear_pain, ear_drainage. Managed with antibiotic ear drops; outcome: resolved after tubes.",
+    "treatment": "antibiotic ear drops",
+    "outcome": "resolved after tubes",
+    "age": 13,
+    "age_band": "teen",
+    "symptoms": [
+      "ear_pain",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c079",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 75-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 75,
+    "age_band": "senior",
+    "symptoms": []
+  },
+  {
+    "case_id": "c080",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 11-year-old patient presenting with ear_pain, high_fever. Managed with amoxicillin 10d; outcome: resolved.",
+    "treatment": "amoxicillin 10d",
+    "outcome": "resolved",
+    "age": 11,
+    "age_band": "child",
+    "symptoms": [
+      "ear_pain",
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c081",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 78-year-old patient presenting with ear_pain, ear_drainage. Managed with antibiotic ear drops; outcome: resolved after tubes.",
+    "treatment": "antibiotic ear drops",
+    "outcome": "resolved after tubes",
+    "age": 78,
+    "age_band": "senior",
+    "symptoms": [
+      "ear_pain",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c082",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 81-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 81,
+    "age_band": "senior",
+    "symptoms": []
+  },
+  {
+    "case_id": "c083",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 13-year-old patient presenting with high_fever. Managed with amoxicillin 10d; outcome: resolved.",
+    "treatment": "amoxicillin 10d",
+    "outcome": "resolved",
+    "age": 13,
+    "age_band": "teen",
+    "symptoms": [
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c084",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 16-year-old patient presenting with ear_drainage. Managed with antibiotic ear drops; outcome: resolved after tubes.",
+    "treatment": "antibiotic ear drops",
+    "outcome": "resolved after tubes",
+    "age": 16,
+    "age_band": "teen",
+    "symptoms": [
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c085",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 1-year-old patient presenting with mild_itch. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 1,
+    "age_band": "infant",
+    "symptoms": [
+      "mild_itch"
+    ]
+  },
+  {
+    "case_id": "c086",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 16-year-old patient presenting with ear_pain, high_fever. Managed with amoxicillin 7d; outcome: resolved.",
+    "treatment": "amoxicillin 7d",
+    "outcome": "resolved",
+    "age": 16,
+    "age_band": "teen",
+    "symptoms": [
+      "ear_pain",
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c087",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 60-year-old patient presenting with hearing_loss, ear_drainage. Managed with tube placement; outcome: resolved after tubes.",
+    "treatment": "tube placement",
+    "outcome": "resolved after tubes",
+    "age": 60,
+    "age_band": "adult",
+    "symptoms": [
+      "hearing_loss",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c088",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 53-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 53,
+    "age_band": "adult",
+    "symptoms": []
+  },
+  {
+    "case_id": "c089",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 8-year-old patient presenting with ear_pain, high_fever. Managed with ibuprofen + observation; outcome: resolved after antibiotics.",
+    "treatment": "ibuprofen + observation",
+    "outcome": "resolved after antibiotics",
+    "age": 8,
+    "age_band": "child",
+    "symptoms": [
+      "ear_pain",
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c090",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 61-year-old patient presenting with hearing_loss. Managed with ongoing monitoring; outcome: ongoing.",
+    "treatment": "ongoing monitoring",
+    "outcome": "ongoing",
+    "age": 61,
+    "age_band": "adult",
+    "symptoms": [
+      "hearing_loss"
+    ]
+  },
+  {
+    "case_id": "c091",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 1-year-old patient presenting with mild_itch. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 1,
+    "age_band": "infant",
+    "symptoms": [
+      "mild_itch"
+    ]
+  },
+  {
+    "case_id": "c092",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 12-year-old patient presenting with ear_pain, high_fever. Managed with amoxicillin 7d; outcome: resolved.",
+    "treatment": "amoxicillin 7d",
+    "outcome": "resolved",
+    "age": 12,
+    "age_band": "child",
+    "symptoms": [
+      "ear_pain",
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c093",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 2-year-old patient presenting with ear_drainage. Managed with tube placement; outcome: resolved after tubes.",
+    "treatment": "tube placement",
+    "outcome": "resolved after tubes",
+    "age": 2,
+    "age_band": "child",
+    "symptoms": [
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c094",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 89-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 89,
+    "age_band": "senior",
+    "symptoms": []
+  },
+  {
+    "case_id": "c095",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 71-year-old patient presenting with high_fever. Managed with ibuprofen + observation; outcome: resolved after antibiotics.",
+    "treatment": "ibuprofen + observation",
+    "outcome": "resolved after antibiotics",
+    "age": 71,
+    "age_band": "senior",
+    "symptoms": [
+      "high_fever"
+    ]
+  },
+  {
+    "case_id": "c096",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 4-year-old patient presenting with ear_drainage. Managed with ENT referral; outcome: resolved after tubes.",
+    "treatment": "ENT referral",
+    "outcome": "resolved after tubes",
+    "age": 4,
+    "age_band": "child",
+    "symptoms": [
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c097",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 4-year-old patient presenting with mild_itch. Managed with no treatment; outcome: resolved.",
+    "treatment": "none",
+    "outcome": "resolved",
+    "age": 4,
+    "age_band": "child",
+    "symptoms": [
+      "mild_itch"
+    ]
+  },
+  {
+    "case_id": "c098",
+    "diagnosis": "aom",
+    "description": "Acute otitis media (middle ear infection) in a 72-year-old patient presenting with ear_pain. Managed with ibuprofen + observation; outcome: resolved.",
+    "treatment": "ibuprofen + observation",
+    "outcome": "resolved",
+    "age": 72,
+    "age_band": "senior",
+    "symptoms": [
+      "ear_pain"
+    ]
+  },
+  {
+    "case_id": "c099",
+    "diagnosis": "chronic_om",
+    "description": "Chronic otitis media in a 60-year-old patient presenting with ear_pain, ear_drainage. Managed with ongoing monitoring; outcome: resolved after tubes.",
+    "treatment": "ongoing monitoring",
+    "outcome": "resolved after tubes",
+    "age": 60,
+    "age_band": "adult",
+    "symptoms": [
+      "ear_pain",
+      "ear_drainage"
+    ]
+  },
+  {
+    "case_id": "c100",
+    "diagnosis": "normal",
+    "description": "Normal eardrum exam in a 79-year-old patient presenting with no notable symptoms. Managed with no treatment; outcome: no follow-up needed.",
+    "treatment": "none",
+    "outcome": "no follow-up needed",
+    "age": 79,
+    "age_band": "senior",
+    "symptoms": []
+  }
+]

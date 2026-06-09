@@ -27,7 +27,7 @@ The agent runs as a fixed 6-node graph. Node 2 can short-circuit to `re_capture`
 | 1    | CNN Inference             | Calls the CNN once; stores visibility, quality flags, diagnosis, confidences                 |
 | 2    | Quality + Visibility Gate | If eardrum not fully visible or any quality flag fired, set decision = `re_capture` and stop |
 | 3    | Risk Scoring              | Combine diagnosis with age, symptoms, prior history into a 0-1 risk score                    |
-| 4    | Similar Case Retrieval    | Look up past cases with the same diagnosis (mock today, ChromaDB in production)              |
+| 4    | Similar Case Retrieval    | Look up past cases with the same diagnosis (real ChromaDB over 100 synthetic cases)          |
 | 5    | LLM Explanation           | Claude writes a 2-3 sentence explanation referencing the retrieved case IDs                  |
 | 6    | Escalation Decision       | Rule-based check over 3 signals (CNN, retrieved cases, LLM uncertainty); outputs final label |
 
@@ -67,7 +67,7 @@ The full diagram with cloud / HIPAA boundaries and the decision table for Node 6
 | Orchestration | LangGraph                          | Implemented                       |
 | Diagnosis     | EfficientNetV2 multi-task CNN      | Mocked (`src/mock_services.py`)   |
 | LLM           | Claude (via `langchain-anthropic`) | Real                              |
-| Vector store  | ChromaDB                           | Mocked (`src/mock_services.py`)   |
+| Vector store  | ChromaDB                           | Implemented (local persistent)    |
 | Audit DB      | PostgreSQL                         | Not implemented                   |
 | Observability | LangSmith                          | Implemented (auto-tracing)        |
 | Deployment    | Docker + Kubernetes                | Not implemented                   |
@@ -86,7 +86,11 @@ triage-agent/
     graph.py           # LangGraph wiring of the 6 nodes
     state.py           # Pydantic AgentState (shared across all nodes)
     nodes.py           # The 6 node functions + LLM prompt
-    mock_services.py   # Fake CNN and fake case retrieval
+    mock_services.py   # Fake CNN (only)
+    retrieval.py       # Real ChromaDB case retrieval (Node 4)
+  data/
+    generate_cases.py  # Deterministic generator for the synthetic cases
+    cases.json         # 100 synthetic past cases (committed)
   interview-story/     # Q1 (business) and Q2 (technical) write-ups
   requirements.txt
   .env.example         # ANTHROPIC_API_KEY placeholder
@@ -105,6 +109,12 @@ pip install -r requirements.txt
 cp .env.example .env
 # then open .env and paste your real ANTHROPIC_API_KEY
 ```
+
+First run note: Node 4 uses a local sentence-transformers model
+(`all-MiniLM-L6-v2`, about 80MB). It downloads once on the first run and caches
+under `~/.cache/huggingface/`. The first run also seeds a local ChromaDB store
+in `chroma_db/` from `data/cases.json`. Both are one-time; later runs are fast
+and offline. To regenerate the cases, run `python -m data.generate_cases`.
 
 ---
 
@@ -156,7 +166,7 @@ Each run prints the final `decision`, the `risk_score`, the LLM `explanation`, a
 | Component       | This repo                                               | Production target                                      |
 | --------------- | ------------------------------------------------------- | ------------------------------------------------------ |
 | CNN inference   | `mock_cnn()` returns canned output per `video_id`       | Real EfficientNetV2 served behind an internal endpoint |
-| Case retrieval  | `mock_retrieval()` returns 3 canned cases per diagnosis | ChromaDB lookup by image embedding                     |
+| Case retrieval  | Real ChromaDB over 100 synthetic cases (text embeddings) | ChromaDB lookup by image embedding over real cases    |
 | LLM explanation | Real Claude call via `langchain-anthropic`              | Same                                                   |
 | API             | None (CLI only)                                         | FastAPI + Pydantic with auth and input validation      |
 | Persistence     | None (in-memory state)                                  | PostgreSQL for decisions, LangSmith for traces         |
