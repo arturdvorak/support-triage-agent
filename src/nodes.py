@@ -10,7 +10,8 @@ from langchain_anthropic import ChatAnthropic
 from pydantic import BaseModel, Field
 
 from src.state import AgentState, SimilarCase
-from src.mock_services import mock_cnn, mock_retrieval
+from src.mock_services import mock_cnn
+from src.retrieval import get_collection, seed_if_empty, retrieve_similar
 
 load_dotenv()
 
@@ -18,6 +19,9 @@ load_dotenv()
 # try to ship traces and warn on every call.
 if not os.getenv("LANGSMITH_API_KEY"):
     os.environ["LANGSMITH_TRACING"] = "false"
+
+# Load the synthetic cases into ChromaDB once. Idempotent: skips if already seeded.
+seed_if_empty(get_collection())
 
 
 def node1_cnn_inference(state: AgentState) -> dict:
@@ -92,7 +96,13 @@ def node3_risk_scoring(state: AgentState) -> dict:
 
 def node4_similar_cases(state: AgentState) -> dict:
     """Look up past cases with the same diagnosis to ground the LLM explanation."""
-    return {"similar_cases": mock_retrieval(state.diagnosis)}
+    return {
+        "similar_cases": retrieve_similar(
+            diagnosis=state.diagnosis,
+            age=state.user_data.age,
+            symptoms=state.user_data.symptoms,
+        )
+    }
 
 
 class LLMOutput(BaseModel):
