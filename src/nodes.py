@@ -31,7 +31,7 @@ def node1_cnn_inference(state: AgentState) -> dict:
         "visibility": cnn_output["visibility"],
         "quality_flags": cnn_output["quality_flags"],
         "diagnosis": cnn_output["diagnosis"],
-        "confidences": cnn_output["confidences"],
+        "cnn_confidences": cnn_output["confidences"],
     }
 
 
@@ -90,7 +90,7 @@ def node3_risk_scoring(state: AgentState) -> dict:
 
     return {
         "risk_score": risk,
-        "risk_confidence": state.confidences.get("diagnosis", 0.0),
+        "risk_confidence": state.cnn_confidences.get("diagnosis", 0.0),
     }
 
 
@@ -108,8 +108,11 @@ def node4_similar_cases(state: AgentState) -> dict:
 class LLMOutput(BaseModel):
     """Structured response we ask Claude to return."""
 
-    explanation: str = Field(
-        description="2-3 sentence plain-language explanation for the patient, referencing at least one past case ID."
+    clinical_explanation: str = Field(
+        description="Clinical explanation for a doctor. 2-3 sentences. May name the diagnosis and reference past case IDs."
+    )
+    patient_explanation: str = Field(
+        description="Plain-language explanation for the patient. No diagnosis name, no drug name, no case IDs, no numbers. Always points to a clinician."
     )
     uncertain: bool = Field(
         description="True if the signals disagree or the model is not confident."
@@ -129,23 +132,26 @@ def _format_cases(cases: list[SimilarCase]) -> str:
 
 
 def node5_llm_explanation(state: AgentState) -> dict:
-    """Ask Claude for a plain-language explanation grounded in the retrieved cases."""
-    prompt = f"""You are a clinical assistant explaining an ear triage decision in plain language.
+    """Ask Claude for a clinical explanation and a separate patient-safe explanation."""
+    prompt = f"""You are a clinical assistant explaining an ear triage decision.
 
-CNN diagnosis: {state.diagnosis} (confidence {state.confidences.get('diagnosis', 0):.2f})
+CNN diagnosis: {state.diagnosis} (confidence {state.cnn_confidences.get('diagnosis', 0):.2f})
 Risk score: {state.risk_score:.2f}
 Patient: age {state.user_data.age}, symptoms {state.user_data.symptoms or 'none'}, prior history {state.user_data.prior_history or 'none'}
 
 Similar past cases:
 {_format_cases(state.similar_cases)}
 
-Write a 2-3 sentence explanation of what the CNN found and what the past cases suggest.
-Reference at least one case by its ID. Do not invent findings.
+Write two explanations:
+1. clinical_explanation (for a clinician): 2-3 sentences. Reference at least one case by its ID. Do not invent findings.
+2. patient_explanation (for the patient): 1-2 sentences in plain language. Do NOT name the diagnosis, do NOT name any drug, do NOT mention case IDs or numbers. Always suggest seeing a clinician.
+
 Set uncertain=true if the signals disagree or the diagnosis confidence looks low."""
 
     result = _LLM_STRUCTURED.invoke(prompt)
     return {
-        "explanation": result.explanation,
+        "clinical_explanation": result.clinical_explanation,
+        "patient_explanation": result.patient_explanation,
         "llm_uncertain": result.uncertain,
     }
 
@@ -156,9 +162,29 @@ _LOW_CONF = 0.70
 _HIGH_RISK = 0.80
 
 
+# Fixed, pre-approved patient-facing text per decision. Deterministic by design:
+# a regulator must know the exact words a patient can ever see. Never LLM-generated.
+_PATIENT_MESSAGE = {
+    "auto_clear": "No signs that need follow-up were found in this image. If symptoms continue, see a clinician.",
+    "escalate_routine": "We recommend booking a non-urgent visit with a clinician to review this.",
+    "escalate_urgent": "Please seek care promptly. Contact a clinician today.",
+    "escalate_uncertain": "We could not reach a clear result. A clinician should review this.",
+}
+
+
+def patient_message(decision: str, recapture_reason: str | None) -> str:
+    """Return the fixed patient-facing message for a decision.
+
+    re_capture has no entry in the map; it reuses the Node 2 recapture_reason text.
+    """
+    if decision == "re_capture":
+        return recapture_reason or "Please retake the image."
+    return _PATIENT_MESSAGE[decision]
+
+
 def node6_escalation(state: AgentState) -> dict:
     """Rule-based final decision over the 3 signals: CNN, retrieved cases, LLM."""
-    cnn_conf = state.confidences.get("diagnosis", 0.0)
+    cnn_conf = state.cnn_confidences.get("diagnosis", 0.0)
 
     # Cases vote: majority must match the CNN diagnosis to count as agreement.
     matching = sum(1 for c in state.similar_cases if c.diagnosis == state.diagnosis)

@@ -24,7 +24,7 @@ The agent runs as a fixed 6-node graph. Node 2 can short-circuit to `re_capture`
 
 | Node | Name                      | What it does                                                                                 |
 | ---- | ------------------------- | -------------------------------------------------------------------------------------------- |
-| 1    | CNN Inference             | Calls the CNN once; stores visibility, quality flags, diagnosis, confidences                 |
+| 1    | CNN Inference             | Calls the CNN once; stores visibility, quality flags, diagnosis, cnn_confidences             |
 | 2    | Quality + Visibility Gate | If eardrum not fully visible or any quality flag fired, set decision = `re_capture` and stop |
 | 3    | Risk Scoring              | Combine diagnosis with age, symptoms, prior history into a 0-1 risk score                    |
 | 4    | Similar Case Retrieval    | Look up past cases with the same diagnosis (real ChromaDB over 100 synthetic cases)          |
@@ -156,7 +156,29 @@ python -m src.main --video video_aom --age 1 --symptoms high_fever ear_pain
 
 Available mock `--video` values: `video_normal`, `video_aom`, `video_blurry`.
 
-Each run prints the final `decision`, the `risk_score`, the LLM `explanation`, and (for `re_capture` cases) the user-facing `recapture_reason`.
+Each run prints the final `decision`, the `risk_score`, the LLM `clinical_explanation`, and (for `re_capture` cases) the user-facing `recapture_reason`.
+
+---
+
+## Run the API
+
+Start the server:
+
+```bash
+uvicorn src.api:app --reload
+```
+
+Then call the triage endpoint:
+
+```bash
+curl -X POST http://127.0.0.1:8000/triage \
+  -H "Content-Type: application/json" \
+  -d '{"video_id": "video_aom", "age": 1, "symptoms": ["high_fever", "ear_pain"]}'
+```
+
+The response has two blocks: `patient` (decision, fixed safety message, plain-language
+explanation) and `clinical` (risk score, confidence, similar case IDs, clinical
+explanation). Interactive docs are at `http://127.0.0.1:8000/docs`.
 
 ---
 

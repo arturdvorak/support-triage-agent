@@ -46,7 +46,7 @@ class AgentState(BaseModel):
     quality_flags: list[QualityFlag] = Field(default_factory=list)
     diagnosis: Optional[Diagnosis] = None
     # Confidence per CNN head, e.g. {"visibility": 0.95, "diagnosis": 0.88}
-    confidences: dict[str, float] = Field(default_factory=dict)
+    cnn_confidences: dict[str, float] = Field(default_factory=dict)
 
     # Node 3 - Risk scoring
     risk_score: Optional[float] = None
@@ -56,8 +56,12 @@ class AgentState(BaseModel):
     similar_cases: list[SimilarCase] = Field(default_factory=list)
 
     # Node 5 - LLM
-    explanation: Optional[str] = None
+    clinical_explanation: Optional[str] = None
+    patient_explanation: Optional[str] = None
     llm_uncertain: bool = False
+
+    # Set by the hallucination guardrail (evaluation track). Defaults off.
+    needs_review: bool = False
 
     # Node 2 or Node 6 - Final routing
     decision: Optional[Decision] = None

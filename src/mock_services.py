@@ -29,7 +29,7 @@ _CNN_FIXTURES: dict[str, dict] = {
 
 
 def mock_cnn(video_id: str) -> dict:
-    """Return canned CNN output for a known video_id."""
+    """Return pre-defined CNN output for a known video_id."""
     if video_id not in _CNN_FIXTURES:
         raise ValueError(f"Unknown mock video_id: {video_id}")
     return _CNN_FIXTURES[video_id]

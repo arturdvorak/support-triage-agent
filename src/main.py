@@ -42,8 +42,8 @@ def _print_result(label: str, result: AgentState) -> None:
         print(f"recapture_reason : {result.recapture_reason}")
     if result.risk_score is not None:
         print(f"risk_score       : {result.risk_score:.2f}")
-    if result.explanation:
-        print(f"explanation      : {result.explanation}")
+    if result.clinical_explanation:
+        print(f"clinical_explanation : {result.clinical_explanation}")
 
 
 def _run(graph, label: str, sample: AgentState) -> AgentState:
