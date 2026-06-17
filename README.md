@@ -29,7 +29,7 @@ The agent runs as a fixed 6-node graph. Node 2 can short-circuit to `re_capture`
 | 3    | Risk Scoring              | Combine diagnosis with age, symptoms, prior history into a 0-1 risk score                    |
 | 4    | Similar Case Retrieval    | Look up past cases with the same diagnosis (real ChromaDB over 100 synthetic cases)          |
 | 5    | LLM Explanation           | Claude writes a 2-3 sentence explanation referencing the retrieved case IDs                  |
-| 6    | Escalation Decision       | Rule-based check over 3 signals (CNN, retrieved cases, LLM uncertainty); outputs final label |
+| 6    | Escalation Decision       | Rule-based check over deterministic signals (CNN confidence and case agreement); outputs final label |
 
 
 End-to-end flow (production target):
@@ -63,7 +63,7 @@ The full diagram with cloud / HIPAA boundaries and the decision table for Node 6
 
 | Layer         | Technology                         | Status in this repo               |
 | ------------- | ---------------------------------- | --------------------------------- |
-| API           | FastAPI + Pydantic                 | Not implemented (CLI runner only) |
+| API           | FastAPI + Pydantic                 | Implemented (`/triage` endpoint)  |
 | Orchestration | LangGraph                          | Implemented                       |
 | Diagnosis     | EfficientNetV2 multi-task CNN      | Mocked (`src/mock_services.py`)   |
 | LLM           | Claude (via `langchain-anthropic`) | Real                              |
@@ -73,7 +73,7 @@ The full diagram with cloud / HIPAA boundaries and the decision table for Node 6
 | Deployment    | Docker + Kubernetes                | Not implemented                   |
 
 
-The prototype focuses on the agent loop. Everything outside the agent (API, DB, deployment) is described in the Q2 doc but not built here.
+The prototype focuses on the agent loop and a thin FastAPI layer over it. The remaining production pieces (DB, deployment) are described in the Q2 doc but not built here.
 
 ---
 
@@ -83,14 +83,26 @@ The prototype focuses on the agent loop. Everything outside the agent (API, DB, 
 triage-agent/
   src/
     main.py            # CLI runner: 3 hardcoded samples or one --video case
+    api.py             # FastAPI app exposing the /triage endpoint
     graph.py           # LangGraph wiring of the 6 nodes
     state.py           # Pydantic AgentState (shared across all nodes)
     nodes.py           # The 6 node functions + LLM prompt
     mock_services.py   # Fake CNN (only)
     retrieval.py       # Real ChromaDB case retrieval (Node 4)
   data/
-    generate_cases.py  # Deterministic generator for the synthetic cases
-    cases.json         # 100 synthetic past cases (committed)
+    generate_cases.py        # Deterministic generator for the synthetic cases
+    cases.json               # 100 synthetic past cases (committed)
+    build_golden_dataset.py  # Builds the evaluation golden set
+    golden.json              # 40-case golden dataset (committed)
+  evaluation/
+    metrics.py         # Pure metric helpers (precision/recall/MRR/NDCG, macro-F1, sensitivity)
+    deny_list.py       # Hard-hallucination scanner for patient text
+    eval_retrieval.py  # Retrieval (Node 4) evaluation
+    eval_end_to_end.py # Deterministic decision evaluation
+    eval_node5.py      # Node 5 explanation evaluation (with LLM judge)
+    run_all.py         # Runs all three evals and writes report.md
+    report.md          # Generated metrics report
+  tests/               # pytest suite for nodes, metrics, and evals
   interview-story/     # Q1 (business) and Q2 (technical) write-ups
   requirements.txt
   .env.example         # ANTHROPIC_API_KEY placeholder
@@ -190,7 +202,7 @@ explanation). Interactive docs are at `http://127.0.0.1:8000/docs`.
 | CNN inference   | `mock_cnn()` returns canned output per `video_id`       | Real EfficientNetV2 served behind an internal endpoint |
 | Case retrieval  | Real ChromaDB over 100 synthetic cases (text embeddings) | ChromaDB lookup by image embedding over real cases    |
 | LLM explanation | Real Claude call via `langchain-anthropic`              | Same                                                   |
-| API             | None (CLI only)                                         | FastAPI + Pydantic with auth and input validation      |
+| API             | FastAPI `/triage` endpoint (no auth)                    | FastAPI + Pydantic with auth and input validation      |
 | Persistence     | None (in-memory state)                                  | PostgreSQL for decisions, LangSmith for traces         |
 
 
