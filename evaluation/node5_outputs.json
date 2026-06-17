@@ -1,0 +1,187 @@
+{
+  "g001": {
+    "clinical_explanation": "The CNN model classifies this 14-year-old's ear presentation as normal with high confidence (0.93) and a low risk score of 0.10, with no reported symptoms or prior history to suggest pathology. This is strongly supported by closely matched historical cases, including c007 and c049, both classified as normal with outcomes of resolved or no follow-up needed. No intervention appears indicated at this time, though routine clinical judgment should confirm the finding.",
+    "patient_explanation": "Based on the assessment, your ear appears to be healthy with no signs of concern at this time. That said, it's always a good idea to check in with your doctor or healthcare provider to confirm everything looks good in person.",
+    "uncertain": false
+  },
+  "g002": {
+    "clinical_explanation": "The CNN model identifies acute otitis media with high confidence (0.92) in this infant presenting with ear pain and high fever, yielding a maximum risk score of 1.00. Similar past cases (e.g., c023, c074, c089) with comparable presentations resolved \u2014 though notably c089 ultimately required antibiotics after initial ibuprofen and observation, which warrants close follow-up given the patient's age of zero months. Given the infant's age, AAP guidelines recommend prompt clinical evaluation and a low threshold for antibiotic therapy rather than watchful waiting alone.",
+    "patient_explanation": "Your baby is showing signs of an ear concern that needs attention, especially given their very young age and high fever \u2014 please see a clinician as soon as possible so they can examine your child and decide on the best next steps.",
+    "uncertain": false
+  },
+  "g003": {
+    "clinical_explanation": "The CNN model flags chronic otitis media with a confidence of 0.86 and a risk score of 0.80 in this 71-year-old presenting with ear drainage and no prior otologic history, which is consistent with highly similar past cases such as c075 (sim=0.97) and c054 (sim=0.95), both diagnosed with chronic OM. Management in analogous cases has included ongoing monitoring and tube placement; given the patient's age and elevated risk score, further otoscopic evaluation and audiology referral are recommended to guide treatment planning.",
+    "patient_explanation": "You have been experiencing ear drainage, which can be a sign of a persistent ear condition that needs proper attention \u2014 please see a clinician as soon as possible so they can examine your ear and recommend the right next steps for you.",
+    "uncertain": false
+  },
+  "g004": {
+    "clinical_explanation": "The CNN model classifies this ear presentation as normal with a confidence of 0.86 and a low risk score of 0.10, consistent with the absence of symptoms or prior otological history in this 22-year-old patient. Highly similar past cases (e.g., c025, c070, c040) all carried a normal diagnosis with no treatment required and no follow-up needed. Overall, the signals are in strong agreement and do not suggest active pathology at this time.",
+    "patient_explanation": "Based on the assessment, your ear appears to be healthy with no signs of concern at this time. That said, please follow up with a clinician to confirm this result and address any questions you may have.",
+    "uncertain": false
+  },
+  "g005": {
+    "clinical_explanation": "The CNN model identifies acute otitis media with high confidence (0.96), supported by a moderate risk score of 0.60 and a chief complaint of ear pain in a 21-year-old with no relevant prior history. Similar past cases (e.g., c029, c035) with the same diagnosis were managed with watchful waiting and resolved, suggesting conservative management is a reasonable first-line approach. Antibiotic therapy may be considered if symptoms persist or worsen, as seen in case c029 where resolution followed antibiotic escalation.",
+    "patient_explanation": "It looks like you may have a common type of ear infection that often gets better on its own or with simple treatment, but it's important to see a clinician who can examine your ear and decide the best next steps for you.",
+    "uncertain": false
+  },
+  "g006": {
+    "clinical_explanation": "The CNN model flags chronic otitis media with a confidence of 0.86 and a risk score of 0.80, supported by the patient's presenting symptoms of hearing loss and persistent ear drainage in the absence of prior otologic history. Highly similar past cases \u2014 including c090 and c072 \u2014 both carried the same diagnosis, with management ranging from ongoing monitoring to tube placement, suggesting a range of appropriate interventions depending on clinical examination findings. A full otoscopic evaluation and audiometric assessment are recommended to guide definitive management.",
+    "patient_explanation": "Your symptoms \u2014 difficulty hearing and fluid draining from your ear \u2014 suggest an ongoing ear condition that a doctor should evaluate in person to determine the best course of care. Please make an appointment with a clinician as soon as possible so they can examine your ear and recommend the right treatment for you.",
+    "uncertain": false
+  },
+  "g007": {
+    "clinical_explanation": "The CNN model classifies this presentation as normal with high confidence (0.95), supported by a low risk score of 0.10 and no prior otologic history in this 2-year-old with isolated mild itch. Retrieval of highly similar past cases \u2014 including c052, c091, and c097 \u2014 all yielded a normal diagnosis with no treatment required and full resolution of symptoms. No red-flag features are present in the current data, and the overall signal is consistent and reassuring.",
+    "patient_explanation": "Your child's ear appears to be healthy based on the information provided, and the mild itching is likely nothing to worry about. That said, please follow up with your doctor or a healthcare professional to confirm everything is fine and to address any concerns you may have.",
+    "uncertain": false
+  },
+  "g008": {
+    "clinical_explanation": "The CNN model identifies acute otitis media with high confidence (0.91) and a risk score of 0.80 in this 16-year-old presenting with ear pain and fever and no prior otologic history. Similar past cases (e.g., c074, c044, c038) with comparable presentations were initially managed with watchful waiting, with some requiring antibiotic escalation before resolution. Clinical correlation and direct otoscopic examination are recommended to confirm the diagnosis and guide the watchful waiting versus antibiotic treatment decision.",
+    "patient_explanation": "It looks like you may have an ear infection that is causing your pain and fever, which is something a clinician can confirm and treat. Please see a healthcare provider as soon as possible so they can examine your ear and recommend the best course of care for you.",
+    "uncertain": false
+  },
+  "g009": {
+    "clinical_explanation": "The CNN model flags chronic otitis media with a confidence of 0.86 and an elevated risk score of 0.80 in this 74-year-old presenting with hearing loss and no prior otologic history. Similar past cases (e.g., c090, c039) with the same diagnosis were managed with ongoing monitoring, while c036 required tube placement, suggesting a range of appropriate interventions depending on clinical findings. A full otoscopic examination and audiometric assessment are recommended to guide management.",
+    "patient_explanation": "You appear to have a long-standing ear condition that may be affecting your hearing, and it is important to have a clinician examine your ear in person to determine the best next steps for your care.",
+    "uncertain": false
+  },
+  "g010": {
+    "clinical_explanation": "The CNN model classifies this ear image as normal with high confidence (0.89), supported by a low risk score of 0.20 and an absence of reported symptoms or prior ear pathology in this 85-year-old patient. Highly similar past cases (e.g., c082, c094, c004) all carried a normal diagnosis with no treatment required and favorable outcomes, further reinforcing this assessment. No actionable findings are identified at this time, though routine clinical follow-up remains appropriate given the patient's age.",
+    "patient_explanation": "Based on the automated review, your ear appears healthy with no concerning signs detected at this time. That said, we always recommend checking in with your doctor or a hearing specialist to confirm everything is in order, especially as part of your regular care.",
+    "uncertain": false
+  },
+  "g011": {
+    "clinical_explanation": "The CNN model flags acute otitis media with high confidence (0.92), supported by a moderate risk score of 0.70 in an 87-year-old presenting with ear pain and no relevant prior history. Similar past cases (e.g., c029, c035) with the same diagnosis were managed with watchful waiting, with resolution in most instances \u2014 notably c029 ultimately required antibiotics despite initial observation. Given the patient's advanced age and potential for reduced immune response, close follow-up or a lower threshold for antibiotic initiation may be warranted.",
+    "patient_explanation": "It looks like you may have an ear infection that is causing your pain, and the good news is that many cases like yours get better with careful monitoring. Please see a clinician as soon as possible so they can examine your ear and decide on the best course of care for you.",
+    "uncertain": false
+  },
+  "g012": {
+    "clinical_explanation": "The CNN model identifies chronic otitis media with high confidence (0.93) in this 71-year-old presenting with hearing loss and ear drainage, supported by a risk score of 0.80. This presentation closely mirrors cases c090 and c039, both managed with ongoing monitoring, as well as c072, which required tube placement \u2014 suggesting a range of possible management pathways. Given the patient's age and elevated risk score, close follow-up and ENT referral for tympanic membrane assessment are advisable.",
+    "patient_explanation": "Your symptoms of hearing loss and ear drainage suggest a persistent ear condition that needs proper evaluation and care. Please see a clinician or ear specialist as soon as possible to determine the best course of treatment for you.",
+    "uncertain": false
+  },
+  "g013": {
+    "clinical_explanation": "The CNN model classified this ear presentation as normal with high confidence (0.92), supported by a low risk score of 0.10 and an absence of reported symptoms or prior otological history. This is consistent with closely matched prior cases such as c040 and c025, both diagnosed as normal with no treatment required and full resolution or no follow-up needed. No pathological findings are indicated at this time, though clinical correlation is always recommended.",
+    "patient_explanation": "Based on the assessment, your ear appears to be healthy with no signs of concern at this time. That said, please follow up with your clinician to confirm this result and address any questions or symptoms you may notice.",
+    "uncertain": false
+  },
+  "g014": {
+    "clinical_explanation": "The CNN model flags acute otitis media with 0.88 confidence, supported by a risk score of 0.80 in a 41-year-old presenting with ear pain and high fever and no relevant prior history. Retrieval of similar cases (e.g., c023, c089) shows consistent AOM diagnoses; c023 and c065 resolved with watchful waiting alone, while c089 ultimately required antibiotics after initial ibuprofen and observation, suggesting close follow-up is warranted. Given the elevated risk score and the mixed outcomes in analogous cases, antibiotic stewardship with a clear safety-net plan is recommended.",
+    "patient_explanation": "It looks like you may have an ear infection that is causing your pain and fever, and while many cases like yours get better on their own, some do need treatment \u2014 so please see a clinician as soon as possible to get a proper examination and decide on the best next steps for you.",
+    "uncertain": false
+  },
+  "g015": {
+    "clinical_explanation": "The CNN model flags chronic otitis media with high confidence (0.92) in this 5-year-old presenting with ear drainage and no prior otologic history, yielding a risk score of 0.70. Similar archived cases \u2014 including c075 (monitoring, ongoing) and c054 (tube placement, ongoing) \u2014 suggest a spectrum of management approaches, with surgical intervention via tympanostomy tube placement appearing in the majority of closely matched cases. Clinical correlation with otoscopic findings, duration of drainage, and audiologic assessment is recommended before determining the appropriate treatment pathway.",
+    "patient_explanation": "Your child has been showing signs of an ear condition that may need ongoing care or a small procedure to help with drainage \u2014 a doctor should examine their ear in person to decide the best next step.",
+    "uncertain": false
+  },
+  "g016": {
+    "clinical_explanation": "The CNN model classified this ear image as normal with high confidence (0.94), supported by a low risk score of 0.20, suggesting no pathological findings are present. This is consistent with closely matched prior cases c100, c094, and c004, all of which were diagnosed as normal and required no treatment or follow-up. Given the patient's age of 80 and absence of reported symptoms or prior ear history, no immediate intervention appears indicated, though routine age-appropriate monitoring remains advisable.",
+    "patient_explanation": "Your ear appears healthy based on the assessment, with no concerning signs detected at this time. That said, we always recommend checking in with your clinician to confirm these results and ensure everything is on track for your overall health.",
+    "uncertain": false
+  },
+  "g017": {
+    "clinical_explanation": "The CNN model flags acute otitis media with 0.86 confidence, supported by a moderate risk score of 0.60 and a chief complaint of ear pain in a 17-year-old with no prior otologic history. Similar cases (e.g., c029, c035) with matching presentations were managed with watchful waiting and resolved, with c029 ultimately requiring antibiotics \u2014 suggesting an initial conservative approach is reasonable but antibiotic escalation should remain on the table. No additional clinical findings (e.g., otoscopic confirmation, fever, hearing loss) are documented, so in-person examination is warranted before finalizing management.",
+    "patient_explanation": "It looks like you may have a common type of ear infection that often gets better on its own, but it's important to see a clinician who can examine your ear and decide the best next step for you.",
+    "uncertain": false
+  },
+  "g018": {
+    "clinical_explanation": "The CNN model flags chronic otitis media with 0.87 confidence and a risk score of 0.70 in this 28-year-old presenting with ear pain and drainage and no prior otologic history. Similar cases such as c006 and c057 suggest a range of management from ongoing monitoring to tube placement, with at least one case resolving after tubes. Clinical correlation with otoscopy and audiometry is recommended to confirm the diagnosis and guide intervention.",
+    "patient_explanation": "It looks like you may have a persistent ear condition that is causing your pain and drainage, and it's important to have a clinician examine your ear in person to confirm what's going on and discuss the best next steps for you.",
+    "uncertain": false
+  },
+  "g019": {
+    "clinical_explanation": "The CNN model classified this ear presentation as normal with high confidence (0.97), supported by a low risk score of 0.10 and an absence of reported symptoms or prior history. This finding is consistent with closely matched historical cases such as c040 and c070, both diagnosed as normal with no treatment required and favorable outcomes. No pathological findings are indicated, and routine follow-up does not appear necessary at this time.",
+    "patient_explanation": "Based on the assessment, your ear appears to be healthy with no signs of concern at this time. That said, please continue to check in with your clinician for any new or changing symptoms, as they are best placed to confirm your ear health.",
+    "uncertain": false
+  },
+  "g020": {
+    "clinical_explanation": "The CNN model identifies acute otitis media with high confidence (0.93) in this 1-year-old presenting with ear pain and high fever, yielding a maximum risk score of 1.00. Similar past cases (e.g., c023, c065, c089) with comparable presentations resolved with watchful waiting or ibuprofen plus observation, though case c089 ultimately required antibiotics \u2014 warranting close follow-up given the patient's young age. Per AAP guidelines, antibiotic therapy should be strongly considered in children under 2 years with confirmed AOM and high fever.",
+    "patient_explanation": "Your child is showing signs of a common ear condition that can cause ear pain and fever, and while many children recover on their own, it's important to have a clinician examine your child promptly given their young age and high fever.",
+    "uncertain": false
+  },
+  "g021": {
+    "clinical_explanation": "The CNN model flags chronic otitis media with a confidence of 0.86 and a risk score of 0.80, supported by the patient's presenting symptoms of hearing loss and ear drainage in the context of an 80-year-old with no prior documented ear history. Retrieval of similar cases \u2014 including c090 and c039 (both managed with ongoing monitoring) and c072 (managed with tube placement) \u2014 suggests a range of appropriate interventions, with tube placement remaining a consideration given the patient's age and risk profile. Clinical re-evaluation is recommended to assess tympanic membrane integrity, chronicity, and candidacy for procedural intervention.",
+    "patient_explanation": "It looks like you may have a long-standing ear condition that is causing your hearing loss and drainage, and it's important to have a clinician examine your ear in person to determine the best next steps for your care.",
+    "uncertain": false
+  },
+  "g022": {
+    "clinical_explanation": "The CNN model classified this 1-year-old's ear presentation as normal with high confidence (0.93), supported by a low risk score of 0.30 and an absence of reported symptoms or prior history. This is consistent with closely matched prior cases such as c037, c058, and c043, all of which were diagnosed as normal, required no treatment, and resolved without follow-up. No conflicting signals are present across the imaging, risk scoring, or clinical history to suggest pathology at this time.",
+    "patient_explanation": "Based on the assessment, your child's ear appears to be healthy with no signs of concern at this time. That said, please continue to follow up with your clinician to ensure everything stays on track as your child grows.",
+    "uncertain": false
+  },
+  "g023": {
+    "clinical_explanation": "The CNN model identifies acute otitis media (AOM) with high confidence (0.93), supported by a maximum risk score of 1.00 in a neonate presenting with ear pain and high fever \u2014 an age group warranting close attention given limited immune reserve. Similar past cases (e.g., c023, c074, c089) all resolved, though c089 required antibiotics after initial observation, suggesting watchful waiting may be appropriate but antibiotic escalation should have a low threshold at this age. Given the patient's age of 0 months, clinician review is strongly advised before any management plan is finalized, as neonatal AOM guidelines differ from those for older infants.",
+    "patient_explanation": "Your baby is showing signs of an ear problem along with a high fever, which needs prompt attention from a doctor, especially at this young age. Please see a clinician as soon as possible so they can examine your baby and decide on the safest next steps.",
+    "uncertain": false
+  },
+  "g024": {
+    "clinical_explanation": "The CNN model flags chronic otitis media with high confidence (0.96), supported by the patient's presenting symptoms of hearing loss and persistent ear drainage in the absence of prior otologic history. The risk score of 0.70 suggests moderate clinical urgency warranting prompt evaluation. This presentation closely mirrors cases c090 and c072, where management ranged from ongoing monitoring to surgical tube placement, both with ongoing follow-up outcomes.",
+    "patient_explanation": "Your symptoms of hearing loss and ear drainage may be related to a persistent ear condition that needs proper attention \u2014 please see a clinician as soon as possible so they can examine your ear and recommend the right course of care.",
+    "uncertain": false
+  },
+  "g025": {
+    "clinical_explanation": "The CNN model classified this 13-year-old patient's ear presentation as normal with high confidence (0.89), supported by a low risk score of 0.10 and an absence of reported symptoms or prior history. This finding is strongly corroborated by similar past cases, including c007 and c022, both classified as normal with no treatment required and full resolution. No red flags are present in the current data, and the model signals are consistent, suggesting no urgent intervention is indicated at this time.",
+    "patient_explanation": "Based on the assessment, your ear appears to be healthy with no signs of concern at this time. That said, it's always a good idea to check in with a clinician to confirm everything is fine and address any questions you may have.",
+    "uncertain": false
+  },
+  "g026": {
+    "clinical_explanation": "The CNN model flags acute otitis media with a confidence of 0.86 and an elevated risk score of 0.90 in this 68-year-old presenting with high fever and no prior otologic history. Similar cases (e.g., c023, c065) resolved with watchful waiting, though case c095 \u2014 which also involved ibuprofen and observation \u2014 ultimately required antibiotics, warranting close follow-up given the patient's age and fever severity. Given the high risk score and the patient's age, antibiotic therapy should be strongly considered rather than defaulting to a watchful waiting approach.",
+    "patient_explanation": "Your symptoms suggest an ear condition that may need prompt attention, especially given your fever \u2014 please see a clinician as soon as possible so they can examine you and decide on the best course of care.",
+    "uncertain": false
+  },
+  "g027": {
+    "clinical_explanation": "The CNN model flags chronic otitis media with high confidence (0.90), supported by a risk score of 0.70 in this 14-year-old presenting with hearing loss and no prior otologic history. Similar archived cases (e.g., c039, sim=0.98; c090, sim=0.97) were managed with ongoing monitoring, while c036 (sim=0.94) required tube placement, suggesting management intensity may vary. Clinical examination including otoscopy and audiometry is recommended to confirm the diagnosis and guide treatment.",
+    "patient_explanation": "Your hearing concerns may be related to a persistent ear condition that a doctor should evaluate in person. Please see a clinician soon so they can examine your ear and recommend the best next steps for you.",
+    "uncertain": false
+  },
+  "g028": {
+    "clinical_explanation": "The CNN model classifies this ear presentation as normal with high confidence (0.90) and a low risk score of 0.10, consistent with the patient's age of 23, absence of symptoms, and no prior ear history. Highly similar past cases (e.g., c070, c025) with identical diagnoses and outcomes of no follow-up needed further support this assessment. No pathological findings are indicated at this time, though clinical correlation is always advised.",
+    "patient_explanation": "Based on the assessment, your ear appears to be healthy with no signs of concern at this time. That said, please follow up with your clinician if you notice any new symptoms or changes.",
+    "uncertain": false
+  },
+  "g029": {
+    "clinical_explanation": "The CNN model identifies acute otitis media with high confidence (0.95) and a risk score of 0.90 in this 73-year-old presenting with ear pain and fever and no relevant prior history. Similar past cases (e.g., c074, c032, c044) with near-identical presentations were initially managed with watchful waiting, with two of three ultimately resolving after antibiotic therapy, suggesting close follow-up and a low threshold for antibiotic initiation is warranted in this older patient. Given the elevated risk score and patient age, prompt clinical reassessment is recommended if symptoms do not improve within 48\u201372 hours.",
+    "patient_explanation": "It looks like you may have an infection in your ear, which is causing your pain and fever \u2014 this is something a clinician should evaluate in person to decide on the best course of treatment for you. Please make sure to see a doctor promptly, especially if your symptoms are getting worse.",
+    "uncertain": false
+  },
+  "g030": {
+    "clinical_explanation": "The CNN model flags chronic otitis media with high confidence (0.97) and a risk score of 0.80 in this 73-year-old presenting with hearing loss and ear drainage, with no documented prior otologic history. This presentation closely mirrors case c090 (sim=0.96) and c072 (sim=0.95), both confirmed chronic OM, managed with ongoing monitoring and tube placement respectively \u2014 suggesting active intervention may warrant consideration. Given the elevated risk score and the patient's age, audiometric evaluation and otoscopic assessment are recommended to guide management.",
+    "patient_explanation": "Your symptoms \u2014 difficulty hearing and fluid draining from your ear \u2014 suggest an ongoing ear condition that needs proper attention. Please see a clinician as soon as possible so they can examine your ear and recommend the right course of care for you.",
+    "uncertain": false
+  },
+  "g031": {
+    "clinical_explanation": "The CNN model suggests acute otitis media (AOM) with a moderate confidence of 0.55 and a risk score of 0.60, indicating a borderline presentation in this 5-year-old with isolated ear pain and no prior otologic history. Similar cases (e.g., c035, c029) with comparable profiles were managed successfully with watchful waiting, with one (c029) ultimately requiring antibiotics before resolution, suggesting an initial conservative approach may be appropriate. Given the low-to-moderate confidence and the mixed outcomes in analogous cases, close follow-up and shared decision-making with the caregiver are advised before initiating antibiotic therapy.",
+    "patient_explanation": "Your child's ear pain may be due to a common ear condition that often gets better on its own, but it's important to have a clinician examine them to decide on the best next steps and monitor how they're feeling.",
+    "uncertain": true
+  },
+  "g032": {
+    "clinical_explanation": "The CNN model classified this ear presentation as normal with a confidence of 0.62 and a low risk score of 0.10, suggesting no acute pathology in this asymptomatic 40-year-old with no prior ear history. Highly similar past cases (e.g., c040, c025, c100) all carried a normal diagnosis with no treatment required and favorable outcomes. However, the model confidence of 0.62 is modest, so clinical correlation and direct otoscopic examination are recommended before finalizing the assessment.",
+    "patient_explanation": "Based on the initial screening, your ear appears to be healthy with no obvious concerns at this time, which is reassuring. That said, it's always a good idea to have a clinician take a closer look to confirm everything is fine.",
+    "uncertain": true
+  },
+  "g033": {
+    "clinical_explanation": "The CNN model suggests chronic otitis media with a moderate confidence of 0.60, though the elevated risk score of 0.80 warrants careful attention in this 70-year-old presenting with hearing loss and no prior otologic history. Similar past cases (e.g., c090, c039) with the same diagnosis were managed with ongoing monitoring, while c036 required tube placement, suggesting a range of possible management pathways. Given the moderate diagnostic confidence and high risk score, further clinical evaluation \u2014 including otoscopy and audiometry \u2014 is recommended before finalising a management plan.",
+    "patient_explanation": "Your hearing concerns may be related to a long-standing ear condition that a specialist can properly assess and manage. Please see a clinician as soon as possible so they can examine your ear and recommend the best next steps for you.",
+    "uncertain": true
+  },
+  "g034": {
+    "clinical_explanation": "The CNN model flags acute otitis media with high confidence (0.88) in this 1-year-old presenting with high fever and ear pain, yielding a risk score of 1.00. Similar past cases (e.g., c023, c065) with comparable presentations resolved with watchful waiting, though case c089 ultimately required antibiotics after initial observation, suggesting close follow-up is warranted. Given the patient's age (under 2 years) and symptom burden, clinician assessment should determine whether immediate antibiotic therapy is indicated per current AOM guidelines.",
+    "patient_explanation": "Your child may have an ear infection that is causing the fever and ear discomfort, and while many cases like this get better on their own, it is important to have a clinician examine your child in person to decide on the best next steps.",
+    "uncertain": false
+  },
+  "g035": {
+    "clinical_explanation": "The CNN model identifies acute otitis media with high confidence (0.90), supported by a maximum risk score of 1.00 and the presenting symptom of high fever in a neonate \u2014 an age group warranting close attention given limited immune reserve. Similar past cases (e.g., c023, c065) with comparable presentations resolved under watchful waiting, though case c095 ultimately required antibiotics after initial observation, suggesting escalation readiness is prudent. Given the patient's age of 0 months, current AAP guidelines recommend prompt clinical evaluation and low threshold for antibiotic initiation rather than watchful waiting alone.",
+    "patient_explanation": "Your baby may have an ear infection, and because of their very young age and high fever, it's important to have them seen by a doctor or healthcare provider as soon as possible for a proper examination and guidance on next steps.",
+    "uncertain": false
+  },
+  "g036": {
+    "clinical_explanation": "The CNN model flags chronic otitis media with high confidence (0.91) and an elevated risk score of 0.80, supported by the presenting symptom of ear drainage in a 72-year-old with no prior documented ear history. Similar past cases (e.g., c075, c003) with the same diagnosis were managed with either ongoing monitoring or tube placement, both with ongoing outcomes, suggesting this patient warrants prompt otolaryngology evaluation to determine the appropriate intervention. No additional findings beyond ear drainage are documented, so clinical examination is essential before confirming management.",
+    "patient_explanation": "Your ear symptom \u2014 specifically the drainage you've been experiencing \u2014 may indicate a persistent ear condition that needs attention, and it's important to see a clinician or ear specialist as soon as possible for a proper examination and to discuss the best next steps for your care.",
+    "uncertain": false
+  },
+  "g037": {
+    "clinical_explanation": "The CNN model flags chronic otitis media with high confidence (0.93) and an elevated risk score of 0.80 in this 68-year-old presenting with hearing loss and no prior otologic history. This presentation closely mirrors cases c090 and c039, both managed with ongoing monitoring, though case c036 required tube placement \u2014 suggesting escalation may be warranted depending on clinical examination findings. Recommend otoscopic evaluation, audiometry, and consideration of ENT referral given the patient's age and risk profile.",
+    "patient_explanation": "Your ear assessment suggests a persistent issue with your ear that may be affecting your hearing and warrants closer attention. Please see a clinician as soon as possible for a thorough examination to determine the best next steps for your care.",
+    "uncertain": false
+  }
+}
