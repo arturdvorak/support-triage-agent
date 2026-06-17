@@ -1,0 +1,1718 @@
+[
+  {
+    "id": "g001",
+    "input": {
+      "age": 14,
+      "symptoms": [],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "normal",
+        "diagnosis_confidence": 0.93
+      }
+    },
+    "expected_decision": "auto_clear",
+    "relevance": {
+      "c004": 1,
+      "c007": 2,
+      "c013": 1,
+      "c016": 1,
+      "c022": 1,
+      "c025": 1,
+      "c034": 1,
+      "c037": 1,
+      "c040": 1,
+      "c043": 1,
+      "c046": 1,
+      "c049": 2,
+      "c055": 1,
+      "c058": 1,
+      "c067": 1,
+      "c070": 1,
+      "c073": 1,
+      "c076": 1,
+      "c079": 1,
+      "c082": 1,
+      "c088": 1,
+      "c094": 1,
+      "c100": 1
+    }
+  },
+  {
+    "id": "g002",
+    "input": {
+      "age": 0,
+      "symptoms": [
+        "ear_pain",
+        "high_fever"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.92
+      }
+    },
+    "expected_decision": "escalate_urgent",
+    "relevance": {
+      "c002": 1,
+      "c005": 1,
+      "c008": 1,
+      "c011": 2,
+      "c014": 2,
+      "c017": 2,
+      "c020": 1,
+      "c023": 1,
+      "c026": 1,
+      "c029": 1,
+      "c032": 1,
+      "c035": 1,
+      "c038": 1,
+      "c041": 1,
+      "c044": 1,
+      "c047": 1,
+      "c050": 1,
+      "c053": 1,
+      "c056": 1,
+      "c059": 1,
+      "c062": 1,
+      "c065": 1,
+      "c068": 1,
+      "c071": 2,
+      "c074": 1,
+      "c077": 1,
+      "c080": 1,
+      "c083": 1,
+      "c086": 1,
+      "c089": 1,
+      "c092": 1,
+      "c095": 1,
+      "c098": 1
+    }
+  },
+  {
+    "id": "g003",
+    "input": {
+      "age": 71,
+      "symptoms": [
+        "ear_drainage"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "chronic_om",
+        "diagnosis_confidence": 0.86
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c003": 1,
+      "c006": 1,
+      "c009": 2,
+      "c012": 1,
+      "c018": 1,
+      "c021": 2,
+      "c024": 1,
+      "c027": 1,
+      "c036": 1,
+      "c042": 1,
+      "c045": 1,
+      "c048": 1,
+      "c051": 2,
+      "c054": 1,
+      "c057": 1,
+      "c060": 1,
+      "c066": 1,
+      "c069": 1,
+      "c072": 1,
+      "c075": 1,
+      "c078": 1,
+      "c081": 2,
+      "c084": 1,
+      "c087": 1,
+      "c093": 1,
+      "c096": 1,
+      "c099": 1
+    }
+  },
+  {
+    "id": "g004",
+    "input": {
+      "age": 22,
+      "symptoms": [],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "normal",
+        "diagnosis_confidence": 0.86
+      }
+    },
+    "expected_decision": "escalate_uncertain",
+    "relevance": {
+      "c004": 1,
+      "c007": 1,
+      "c013": 1,
+      "c016": 1,
+      "c022": 1,
+      "c025": 2,
+      "c031": 1,
+      "c037": 1,
+      "c040": 2,
+      "c043": 1,
+      "c046": 1,
+      "c049": 1,
+      "c055": 1,
+      "c058": 1,
+      "c061": 1,
+      "c070": 2,
+      "c073": 1,
+      "c076": 1,
+      "c079": 1,
+      "c082": 1,
+      "c088": 2,
+      "c094": 1,
+      "c100": 1
+    }
+  },
+  {
+    "id": "g005",
+    "input": {
+      "age": 21,
+      "symptoms": [
+        "ear_pain"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.96
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c002": 1,
+      "c005": 1,
+      "c008": 1,
+      "c011": 1,
+      "c014": 1,
+      "c017": 1,
+      "c020": 1,
+      "c023": 1,
+      "c026": 1,
+      "c029": 2,
+      "c032": 2,
+      "c035": 1,
+      "c038": 1,
+      "c041": 1,
+      "c044": 1,
+      "c047": 1,
+      "c050": 1,
+      "c053": 1,
+      "c056": 1,
+      "c059": 1,
+      "c062": 1,
+      "c068": 1,
+      "c071": 1,
+      "c074": 1,
+      "c077": 1,
+      "c080": 1,
+      "c086": 1,
+      "c089": 1,
+      "c092": 1,
+      "c098": 1
+    }
+  },
+  {
+    "id": "g006",
+    "input": {
+      "age": 66,
+      "symptoms": [
+        "hearing_loss",
+        "ear_drainage"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "chronic_om",
+        "diagnosis_confidence": 0.86
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c003": 1,
+      "c006": 1,
+      "c009": 2,
+      "c012": 1,
+      "c015": 1,
+      "c018": 1,
+      "c021": 2,
+      "c024": 1,
+      "c027": 2,
+      "c030": 1,
+      "c033": 1,
+      "c036": 2,
+      "c039": 1,
+      "c042": 1,
+      "c045": 1,
+      "c048": 1,
+      "c051": 2,
+      "c054": 1,
+      "c057": 1,
+      "c060": 1,
+      "c063": 1,
+      "c066": 1,
+      "c069": 1,
+      "c072": 1,
+      "c075": 1,
+      "c078": 1,
+      "c081": 2,
+      "c084": 1,
+      "c087": 1,
+      "c090": 1,
+      "c093": 1,
+      "c096": 1,
+      "c099": 1
+    }
+  },
+  {
+    "id": "g007",
+    "input": {
+      "age": 2,
+      "symptoms": [
+        "mild_itch"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "normal",
+        "diagnosis_confidence": 0.95
+      }
+    },
+    "expected_decision": "auto_clear",
+    "relevance": {
+      "c001": 1,
+      "c010": 1,
+      "c013": 1,
+      "c016": 1,
+      "c019": 2,
+      "c022": 1,
+      "c028": 2,
+      "c031": 1,
+      "c034": 1,
+      "c052": 1,
+      "c061": 1,
+      "c064": 1,
+      "c067": 1,
+      "c073": 1,
+      "c076": 1,
+      "c085": 1,
+      "c091": 1,
+      "c097": 2
+    }
+  },
+  {
+    "id": "g008",
+    "input": {
+      "age": 16,
+      "symptoms": [
+        "ear_pain",
+        "fever"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.91
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c002": 1,
+      "c005": 1,
+      "c008": 2,
+      "c011": 1,
+      "c014": 1,
+      "c017": 1,
+      "c020": 1,
+      "c026": 1,
+      "c029": 1,
+      "c032": 1,
+      "c035": 1,
+      "c038": 2,
+      "c044": 1,
+      "c050": 1,
+      "c053": 1,
+      "c056": 1,
+      "c059": 1,
+      "c062": 1,
+      "c065": 1,
+      "c071": 1,
+      "c074": 2,
+      "c077": 1,
+      "c080": 1,
+      "c083": 1,
+      "c086": 2,
+      "c089": 1,
+      "c092": 1,
+      "c098": 1
+    }
+  },
+  {
+    "id": "g009",
+    "input": {
+      "age": 74,
+      "symptoms": [
+        "hearing_loss"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "chronic_om",
+        "diagnosis_confidence": 0.86
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c009": 2,
+      "c015": 1,
+      "c018": 1,
+      "c021": 1,
+      "c027": 2,
+      "c030": 1,
+      "c033": 1,
+      "c036": 2,
+      "c039": 1,
+      "c045": 1,
+      "c048": 1,
+      "c051": 1,
+      "c063": 1,
+      "c072": 1,
+      "c081": 1,
+      "c087": 1,
+      "c090": 1
+    }
+  },
+  {
+    "id": "g010",
+    "input": {
+      "age": 85,
+      "symptoms": [],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "normal",
+        "diagnosis_confidence": 0.89
+      }
+    },
+    "expected_decision": "escalate_uncertain",
+    "relevance": {
+      "c004": 2,
+      "c007": 1,
+      "c010": 1,
+      "c013": 1,
+      "c016": 1,
+      "c022": 1,
+      "c025": 1,
+      "c037": 1,
+      "c040": 1,
+      "c043": 1,
+      "c046": 2,
+      "c049": 1,
+      "c055": 2,
+      "c058": 1,
+      "c064": 1,
+      "c070": 1,
+      "c073": 1,
+      "c076": 1,
+      "c079": 2,
+      "c082": 2,
+      "c088": 1,
+      "c094": 2,
+      "c100": 2
+    }
+  },
+  {
+    "id": "g011",
+    "input": {
+      "age": 87,
+      "symptoms": [
+        "ear_pain"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.92
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c002": 1,
+      "c005": 1,
+      "c008": 1,
+      "c011": 1,
+      "c014": 1,
+      "c017": 1,
+      "c020": 2,
+      "c026": 2,
+      "c029": 1,
+      "c032": 1,
+      "c035": 1,
+      "c038": 1,
+      "c044": 1,
+      "c050": 1,
+      "c053": 2,
+      "c056": 1,
+      "c059": 2,
+      "c062": 2,
+      "c071": 1,
+      "c074": 1,
+      "c077": 1,
+      "c080": 1,
+      "c086": 1,
+      "c089": 1,
+      "c092": 1,
+      "c095": 1,
+      "c098": 2
+    }
+  },
+  {
+    "id": "g012",
+    "input": {
+      "age": 71,
+      "symptoms": [
+        "hearing_loss",
+        "ear_drainage"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "chronic_om",
+        "diagnosis_confidence": 0.93
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c003": 1,
+      "c006": 1,
+      "c009": 2,
+      "c012": 1,
+      "c015": 1,
+      "c018": 1,
+      "c021": 2,
+      "c024": 1,
+      "c027": 2,
+      "c030": 1,
+      "c033": 1,
+      "c036": 2,
+      "c039": 1,
+      "c042": 1,
+      "c045": 1,
+      "c048": 1,
+      "c051": 2,
+      "c054": 1,
+      "c057": 1,
+      "c060": 1,
+      "c063": 1,
+      "c066": 1,
+      "c069": 1,
+      "c072": 1,
+      "c075": 1,
+      "c078": 1,
+      "c081": 2,
+      "c084": 1,
+      "c087": 1,
+      "c090": 1,
+      "c093": 1,
+      "c096": 1,
+      "c099": 1
+    }
+  },
+  {
+    "id": "g013",
+    "input": {
+      "age": 38,
+      "symptoms": [],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "normal",
+        "diagnosis_confidence": 0.92
+      }
+    },
+    "expected_decision": "auto_clear",
+    "relevance": {
+      "c004": 1,
+      "c007": 1,
+      "c013": 1,
+      "c016": 1,
+      "c022": 1,
+      "c025": 2,
+      "c031": 1,
+      "c037": 1,
+      "c040": 2,
+      "c043": 1,
+      "c046": 1,
+      "c049": 1,
+      "c055": 1,
+      "c058": 1,
+      "c061": 1,
+      "c070": 2,
+      "c073": 1,
+      "c076": 1,
+      "c079": 1,
+      "c082": 1,
+      "c088": 2,
+      "c094": 1,
+      "c100": 1
+    }
+  },
+  {
+    "id": "g014",
+    "input": {
+      "age": 41,
+      "symptoms": [
+        "ear_pain",
+        "high_fever"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.88
+      }
+    },
+    "expected_decision": "escalate_urgent",
+    "relevance": {
+      "c002": 1,
+      "c005": 1,
+      "c008": 1,
+      "c011": 1,
+      "c014": 1,
+      "c017": 1,
+      "c020": 1,
+      "c023": 2,
+      "c026": 1,
+      "c029": 2,
+      "c032": 2,
+      "c035": 1,
+      "c038": 1,
+      "c041": 2,
+      "c044": 1,
+      "c047": 2,
+      "c050": 1,
+      "c053": 1,
+      "c056": 1,
+      "c059": 1,
+      "c062": 1,
+      "c065": 1,
+      "c068": 2,
+      "c071": 1,
+      "c074": 1,
+      "c077": 1,
+      "c080": 1,
+      "c083": 1,
+      "c086": 1,
+      "c089": 1,
+      "c092": 1,
+      "c095": 1,
+      "c098": 1
+    }
+  },
+  {
+    "id": "g015",
+    "input": {
+      "age": 5,
+      "symptoms": [
+        "ear_drainage"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "chronic_om",
+        "diagnosis_confidence": 0.92
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c003": 1,
+      "c006": 1,
+      "c009": 1,
+      "c012": 1,
+      "c018": 1,
+      "c021": 1,
+      "c024": 1,
+      "c030": 1,
+      "c033": 1,
+      "c039": 1,
+      "c042": 1,
+      "c045": 2,
+      "c048": 1,
+      "c051": 1,
+      "c054": 2,
+      "c057": 1,
+      "c060": 1,
+      "c066": 1,
+      "c069": 1,
+      "c072": 1,
+      "c075": 1,
+      "c078": 1,
+      "c081": 1,
+      "c084": 1,
+      "c087": 1,
+      "c093": 2,
+      "c096": 2,
+      "c099": 1
+    }
+  },
+  {
+    "id": "g016",
+    "input": {
+      "age": 80,
+      "symptoms": [],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "normal",
+        "diagnosis_confidence": 0.94
+      }
+    },
+    "expected_decision": "auto_clear",
+    "relevance": {
+      "c004": 2,
+      "c007": 1,
+      "c010": 1,
+      "c013": 1,
+      "c016": 1,
+      "c022": 1,
+      "c025": 1,
+      "c037": 1,
+      "c040": 1,
+      "c043": 1,
+      "c046": 2,
+      "c049": 1,
+      "c055": 2,
+      "c058": 1,
+      "c064": 1,
+      "c070": 1,
+      "c073": 1,
+      "c076": 1,
+      "c079": 2,
+      "c082": 2,
+      "c088": 1,
+      "c094": 2,
+      "c100": 2
+    }
+  },
+  {
+    "id": "g017",
+    "input": {
+      "age": 17,
+      "symptoms": [
+        "ear_pain"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.86
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c002": 1,
+      "c005": 1,
+      "c008": 2,
+      "c011": 1,
+      "c014": 1,
+      "c017": 1,
+      "c020": 1,
+      "c026": 1,
+      "c029": 1,
+      "c032": 1,
+      "c035": 1,
+      "c038": 2,
+      "c044": 1,
+      "c050": 1,
+      "c053": 1,
+      "c056": 1,
+      "c059": 1,
+      "c062": 1,
+      "c065": 1,
+      "c071": 1,
+      "c074": 2,
+      "c077": 1,
+      "c080": 1,
+      "c083": 1,
+      "c086": 2,
+      "c089": 1,
+      "c092": 1,
+      "c098": 1
+    }
+  },
+  {
+    "id": "g018",
+    "input": {
+      "age": 28,
+      "symptoms": [
+        "ear_pain",
+        "ear_drainage"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "chronic_om",
+        "diagnosis_confidence": 0.87
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c003": 1,
+      "c006": 2,
+      "c009": 1,
+      "c012": 1,
+      "c015": 1,
+      "c018": 2,
+      "c021": 1,
+      "c024": 1,
+      "c042": 1,
+      "c045": 1,
+      "c048": 1,
+      "c051": 1,
+      "c054": 1,
+      "c057": 2,
+      "c060": 1,
+      "c066": 1,
+      "c069": 1,
+      "c072": 1,
+      "c075": 1,
+      "c078": 1,
+      "c081": 1,
+      "c084": 1,
+      "c087": 2,
+      "c090": 1,
+      "c093": 1,
+      "c096": 1,
+      "c099": 2
+    }
+  },
+  {
+    "id": "g019",
+    "input": {
+      "age": 44,
+      "symptoms": [],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "normal",
+        "diagnosis_confidence": 0.97
+      }
+    },
+    "expected_decision": "auto_clear",
+    "relevance": {
+      "c004": 1,
+      "c007": 1,
+      "c013": 1,
+      "c016": 1,
+      "c022": 1,
+      "c025": 2,
+      "c031": 1,
+      "c037": 1,
+      "c040": 2,
+      "c043": 1,
+      "c046": 1,
+      "c049": 1,
+      "c055": 1,
+      "c058": 1,
+      "c061": 1,
+      "c070": 2,
+      "c073": 1,
+      "c076": 1,
+      "c079": 1,
+      "c082": 1,
+      "c088": 2,
+      "c094": 1,
+      "c100": 1
+    }
+  },
+  {
+    "id": "g020",
+    "input": {
+      "age": 1,
+      "symptoms": [
+        "ear_pain",
+        "high_fever"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.93
+      }
+    },
+    "expected_decision": "escalate_urgent",
+    "relevance": {
+      "c002": 1,
+      "c005": 1,
+      "c008": 1,
+      "c011": 2,
+      "c014": 2,
+      "c017": 2,
+      "c020": 1,
+      "c023": 1,
+      "c026": 1,
+      "c029": 1,
+      "c032": 1,
+      "c035": 1,
+      "c038": 1,
+      "c041": 1,
+      "c044": 1,
+      "c047": 1,
+      "c050": 1,
+      "c053": 1,
+      "c056": 1,
+      "c059": 1,
+      "c062": 1,
+      "c065": 1,
+      "c068": 1,
+      "c071": 2,
+      "c074": 1,
+      "c077": 1,
+      "c080": 1,
+      "c083": 1,
+      "c086": 1,
+      "c089": 1,
+      "c092": 1,
+      "c095": 1,
+      "c098": 1
+    }
+  },
+  {
+    "id": "g021",
+    "input": {
+      "age": 80,
+      "symptoms": [
+        "hearing_loss",
+        "ear_drainage"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "chronic_om",
+        "diagnosis_confidence": 0.86
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c003": 1,
+      "c006": 1,
+      "c009": 2,
+      "c012": 1,
+      "c015": 1,
+      "c018": 1,
+      "c021": 2,
+      "c024": 1,
+      "c027": 2,
+      "c030": 1,
+      "c033": 1,
+      "c036": 2,
+      "c039": 1,
+      "c042": 1,
+      "c045": 1,
+      "c048": 1,
+      "c051": 2,
+      "c054": 1,
+      "c057": 1,
+      "c060": 1,
+      "c063": 1,
+      "c066": 1,
+      "c069": 1,
+      "c072": 1,
+      "c075": 1,
+      "c078": 1,
+      "c081": 2,
+      "c084": 1,
+      "c087": 1,
+      "c090": 1,
+      "c093": 1,
+      "c096": 1,
+      "c099": 1
+    }
+  },
+  {
+    "id": "g022",
+    "input": {
+      "age": 1,
+      "symptoms": [],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "normal",
+        "diagnosis_confidence": 0.93
+      }
+    },
+    "expected_decision": "auto_clear",
+    "relevance": {
+      "c001": 1,
+      "c004": 1,
+      "c007": 1,
+      "c013": 1,
+      "c016": 1,
+      "c022": 1,
+      "c025": 1,
+      "c037": 2,
+      "c040": 1,
+      "c043": 2,
+      "c046": 1,
+      "c049": 1,
+      "c052": 1,
+      "c055": 1,
+      "c058": 2,
+      "c070": 1,
+      "c073": 1,
+      "c076": 1,
+      "c079": 1,
+      "c082": 1,
+      "c085": 1,
+      "c088": 1,
+      "c091": 1,
+      "c094": 1,
+      "c100": 1
+    }
+  },
+  {
+    "id": "g023",
+    "input": {
+      "age": 0,
+      "symptoms": [
+        "ear_pain",
+        "high_fever"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.93
+      }
+    },
+    "expected_decision": "escalate_urgent",
+    "relevance": {
+      "c002": 1,
+      "c005": 1,
+      "c008": 1,
+      "c011": 2,
+      "c014": 2,
+      "c017": 2,
+      "c020": 1,
+      "c023": 1,
+      "c026": 1,
+      "c029": 1,
+      "c032": 1,
+      "c035": 1,
+      "c038": 1,
+      "c041": 1,
+      "c044": 1,
+      "c047": 1,
+      "c050": 1,
+      "c053": 1,
+      "c056": 1,
+      "c059": 1,
+      "c062": 1,
+      "c065": 1,
+      "c068": 1,
+      "c071": 2,
+      "c074": 1,
+      "c077": 1,
+      "c080": 1,
+      "c083": 1,
+      "c086": 1,
+      "c089": 1,
+      "c092": 1,
+      "c095": 1,
+      "c098": 1
+    }
+  },
+  {
+    "id": "g024",
+    "input": {
+      "age": 36,
+      "symptoms": [
+        "hearing_loss",
+        "ear_drainage"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "chronic_om",
+        "diagnosis_confidence": 0.96
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c003": 1,
+      "c006": 2,
+      "c009": 1,
+      "c012": 1,
+      "c015": 2,
+      "c018": 2,
+      "c021": 1,
+      "c024": 1,
+      "c027": 1,
+      "c030": 1,
+      "c033": 1,
+      "c036": 1,
+      "c039": 1,
+      "c042": 1,
+      "c045": 1,
+      "c048": 1,
+      "c051": 1,
+      "c054": 1,
+      "c057": 2,
+      "c060": 1,
+      "c063": 1,
+      "c066": 1,
+      "c069": 1,
+      "c072": 1,
+      "c075": 1,
+      "c078": 1,
+      "c081": 1,
+      "c084": 1,
+      "c087": 2,
+      "c090": 2,
+      "c093": 1,
+      "c096": 1,
+      "c099": 2
+    }
+  },
+  {
+    "id": "g025",
+    "input": {
+      "age": 13,
+      "symptoms": [],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "normal",
+        "diagnosis_confidence": 0.89
+      }
+    },
+    "expected_decision": "escalate_uncertain",
+    "relevance": {
+      "c004": 1,
+      "c007": 2,
+      "c013": 1,
+      "c016": 1,
+      "c022": 1,
+      "c025": 1,
+      "c034": 1,
+      "c037": 1,
+      "c040": 1,
+      "c043": 1,
+      "c046": 1,
+      "c049": 2,
+      "c055": 1,
+      "c058": 1,
+      "c067": 1,
+      "c070": 1,
+      "c073": 1,
+      "c076": 1,
+      "c079": 1,
+      "c082": 1,
+      "c088": 1,
+      "c094": 1,
+      "c100": 1
+    }
+  },
+  {
+    "id": "g026",
+    "input": {
+      "age": 68,
+      "symptoms": [
+        "high_fever"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.86
+      }
+    },
+    "expected_decision": "escalate_urgent",
+    "relevance": {
+      "c005": 1,
+      "c008": 1,
+      "c011": 1,
+      "c017": 1,
+      "c020": 2,
+      "c023": 1,
+      "c026": 1,
+      "c041": 1,
+      "c047": 1,
+      "c050": 1,
+      "c053": 1,
+      "c056": 1,
+      "c059": 2,
+      "c062": 1,
+      "c065": 1,
+      "c068": 1,
+      "c080": 1,
+      "c083": 1,
+      "c086": 1,
+      "c089": 1,
+      "c092": 1,
+      "c095": 2,
+      "c098": 1
+    }
+  },
+  {
+    "id": "g027",
+    "input": {
+      "age": 14,
+      "symptoms": [
+        "hearing_loss"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "chronic_om",
+        "diagnosis_confidence": 0.9
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c009": 1,
+      "c015": 1,
+      "c018": 1,
+      "c027": 1,
+      "c030": 1,
+      "c033": 1,
+      "c036": 1,
+      "c039": 1,
+      "c045": 1,
+      "c048": 1,
+      "c063": 1,
+      "c072": 2,
+      "c078": 1,
+      "c084": 1,
+      "c087": 1,
+      "c090": 1
+    }
+  },
+  {
+    "id": "g028",
+    "input": {
+      "age": 23,
+      "symptoms": [],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "normal",
+        "diagnosis_confidence": 0.9
+      }
+    },
+    "expected_decision": "auto_clear",
+    "relevance": {
+      "c004": 1,
+      "c007": 1,
+      "c013": 1,
+      "c016": 1,
+      "c022": 1,
+      "c025": 2,
+      "c031": 1,
+      "c037": 1,
+      "c040": 2,
+      "c043": 1,
+      "c046": 1,
+      "c049": 1,
+      "c055": 1,
+      "c058": 1,
+      "c061": 1,
+      "c070": 2,
+      "c073": 1,
+      "c076": 1,
+      "c079": 1,
+      "c082": 1,
+      "c088": 2,
+      "c094": 1,
+      "c100": 1
+    }
+  },
+  {
+    "id": "g029",
+    "input": {
+      "age": 73,
+      "symptoms": [
+        "ear_pain",
+        "fever"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.95
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c002": 1,
+      "c005": 1,
+      "c008": 1,
+      "c011": 1,
+      "c014": 1,
+      "c017": 1,
+      "c020": 2,
+      "c026": 2,
+      "c029": 1,
+      "c032": 1,
+      "c035": 1,
+      "c038": 1,
+      "c044": 1,
+      "c050": 1,
+      "c053": 2,
+      "c056": 1,
+      "c059": 2,
+      "c062": 2,
+      "c071": 1,
+      "c074": 1,
+      "c077": 1,
+      "c080": 1,
+      "c086": 1,
+      "c089": 1,
+      "c092": 1,
+      "c095": 1,
+      "c098": 2
+    }
+  },
+  {
+    "id": "g030",
+    "input": {
+      "age": 73,
+      "symptoms": [
+        "hearing_loss",
+        "ear_drainage"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "chronic_om",
+        "diagnosis_confidence": 0.97
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c003": 1,
+      "c006": 1,
+      "c009": 2,
+      "c012": 1,
+      "c015": 1,
+      "c018": 1,
+      "c021": 2,
+      "c024": 1,
+      "c027": 2,
+      "c030": 1,
+      "c033": 1,
+      "c036": 2,
+      "c039": 1,
+      "c042": 1,
+      "c045": 1,
+      "c048": 1,
+      "c051": 2,
+      "c054": 1,
+      "c057": 1,
+      "c060": 1,
+      "c063": 1,
+      "c066": 1,
+      "c069": 1,
+      "c072": 1,
+      "c075": 1,
+      "c078": 1,
+      "c081": 2,
+      "c084": 1,
+      "c087": 1,
+      "c090": 1,
+      "c093": 1,
+      "c096": 1,
+      "c099": 1
+    }
+  },
+  {
+    "id": "g031",
+    "input": {
+      "age": 5,
+      "symptoms": [
+        "ear_pain"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.55
+      }
+    },
+    "expected_decision": "escalate_uncertain",
+    "relevance": {
+      "c002": 2,
+      "c005": 2,
+      "c008": 1,
+      "c011": 1,
+      "c014": 1,
+      "c017": 1,
+      "c020": 1,
+      "c026": 1,
+      "c029": 1,
+      "c032": 1,
+      "c035": 2,
+      "c038": 1,
+      "c044": 2,
+      "c050": 2,
+      "c053": 1,
+      "c056": 2,
+      "c059": 1,
+      "c062": 1,
+      "c071": 1,
+      "c074": 1,
+      "c077": 2,
+      "c080": 2,
+      "c086": 1,
+      "c089": 2,
+      "c092": 2,
+      "c098": 1
+    }
+  },
+  {
+    "id": "g032",
+    "input": {
+      "age": 40,
+      "symptoms": [],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "normal",
+        "diagnosis_confidence": 0.62
+      }
+    },
+    "expected_decision": "escalate_uncertain",
+    "relevance": {
+      "c004": 1,
+      "c007": 1,
+      "c013": 1,
+      "c016": 1,
+      "c022": 1,
+      "c025": 2,
+      "c031": 1,
+      "c037": 1,
+      "c040": 2,
+      "c043": 1,
+      "c046": 1,
+      "c049": 1,
+      "c055": 1,
+      "c058": 1,
+      "c061": 1,
+      "c070": 2,
+      "c073": 1,
+      "c076": 1,
+      "c079": 1,
+      "c082": 1,
+      "c088": 2,
+      "c094": 1,
+      "c100": 1
+    }
+  },
+  {
+    "id": "g033",
+    "input": {
+      "age": 70,
+      "symptoms": [
+        "hearing_loss"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "chronic_om",
+        "diagnosis_confidence": 0.6
+      }
+    },
+    "expected_decision": "escalate_uncertain",
+    "relevance": {
+      "c009": 2,
+      "c015": 1,
+      "c018": 1,
+      "c021": 1,
+      "c027": 2,
+      "c030": 1,
+      "c033": 1,
+      "c036": 2,
+      "c039": 1,
+      "c045": 1,
+      "c048": 1,
+      "c051": 1,
+      "c063": 1,
+      "c072": 1,
+      "c081": 1,
+      "c087": 1,
+      "c090": 1
+    }
+  },
+  {
+    "id": "g034",
+    "input": {
+      "age": 1,
+      "symptoms": [
+        "high_fever",
+        "ear_pain"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.88
+      }
+    },
+    "expected_decision": "escalate_urgent",
+    "relevance": {
+      "c002": 1,
+      "c005": 1,
+      "c008": 1,
+      "c011": 2,
+      "c014": 2,
+      "c017": 2,
+      "c020": 1,
+      "c023": 1,
+      "c026": 1,
+      "c029": 1,
+      "c032": 1,
+      "c035": 1,
+      "c038": 1,
+      "c041": 1,
+      "c044": 1,
+      "c047": 1,
+      "c050": 1,
+      "c053": 1,
+      "c056": 1,
+      "c059": 1,
+      "c062": 1,
+      "c065": 1,
+      "c068": 1,
+      "c071": 2,
+      "c074": 1,
+      "c077": 1,
+      "c080": 1,
+      "c083": 1,
+      "c086": 1,
+      "c089": 1,
+      "c092": 1,
+      "c095": 1,
+      "c098": 1
+    }
+  },
+  {
+    "id": "g035",
+    "input": {
+      "age": 0,
+      "symptoms": [
+        "high_fever"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.9
+      }
+    },
+    "expected_decision": "escalate_urgent",
+    "relevance": {
+      "c005": 1,
+      "c008": 1,
+      "c011": 2,
+      "c014": 1,
+      "c017": 2,
+      "c020": 1,
+      "c023": 1,
+      "c041": 1,
+      "c047": 1,
+      "c050": 1,
+      "c056": 1,
+      "c059": 1,
+      "c065": 1,
+      "c068": 1,
+      "c071": 1,
+      "c080": 1,
+      "c083": 1,
+      "c086": 1,
+      "c089": 1,
+      "c092": 1,
+      "c095": 1
+    }
+  },
+  {
+    "id": "g036",
+    "input": {
+      "age": 72,
+      "symptoms": [
+        "ear_drainage"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "chronic_om",
+        "diagnosis_confidence": 0.91
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c003": 1,
+      "c006": 1,
+      "c009": 2,
+      "c012": 1,
+      "c018": 1,
+      "c021": 2,
+      "c024": 1,
+      "c027": 1,
+      "c036": 1,
+      "c042": 1,
+      "c045": 1,
+      "c048": 1,
+      "c051": 2,
+      "c054": 1,
+      "c057": 1,
+      "c060": 1,
+      "c066": 1,
+      "c069": 1,
+      "c072": 1,
+      "c075": 1,
+      "c078": 1,
+      "c081": 2,
+      "c084": 1,
+      "c087": 1,
+      "c093": 1,
+      "c096": 1,
+      "c099": 1
+    }
+  },
+  {
+    "id": "g037",
+    "input": {
+      "age": 68,
+      "symptoms": [
+        "hearing_loss"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [],
+        "diagnosis": "chronic_om",
+        "diagnosis_confidence": 0.93
+      }
+    },
+    "expected_decision": "escalate_routine",
+    "relevance": {
+      "c009": 2,
+      "c015": 1,
+      "c018": 1,
+      "c021": 1,
+      "c027": 2,
+      "c030": 1,
+      "c033": 1,
+      "c036": 2,
+      "c039": 1,
+      "c045": 1,
+      "c048": 1,
+      "c051": 1,
+      "c063": 1,
+      "c072": 1,
+      "c081": 1,
+      "c087": 1,
+      "c090": 1
+    }
+  },
+  {
+    "id": "g038",
+    "input": {
+      "age": 30,
+      "symptoms": [],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "partially_visible",
+        "quality_flags": [],
+        "diagnosis": "normal",
+        "diagnosis_confidence": 0.8
+      }
+    },
+    "expected_decision": "re_capture",
+    "relevance": {}
+  },
+  {
+    "id": "g039",
+    "input": {
+      "age": 25,
+      "symptoms": [
+        "ear_pain"
+      ],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "fully_visible",
+        "quality_flags": [
+          "out_of_focus"
+        ],
+        "diagnosis": "aom",
+        "diagnosis_confidence": 0.5
+      }
+    },
+    "expected_decision": "re_capture",
+    "relevance": {}
+  },
+  {
+    "id": "g040",
+    "input": {
+      "age": 3,
+      "symptoms": [],
+      "prior_history": [],
+      "cnn": {
+        "visibility": "not_visible",
+        "quality_flags": [
+          "too_dark"
+        ],
+        "diagnosis": "normal",
+        "diagnosis_confidence": 0.4
+      }
+    },
+    "expected_decision": "re_capture",
+    "relevance": {}
+  }
+]
