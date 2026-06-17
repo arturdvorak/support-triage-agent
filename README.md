@@ -195,3 +195,27 @@ explanation). Interactive docs are at `http://127.0.0.1:8000/docs`.
 
 
 The mocks keep the same input/output shape as the real services, so swapping them in later means changing the function body only - not the call sites.
+
+---
+
+## Evaluation
+
+A runnable evaluation layer scores three parts of the agent against a 40-case
+golden dataset (`data/golden.json`):
+
+- Retrieval (Node 4): precision@3, recall@3, MRR, NDCG@3.
+- Node 5 (LLM explanation): schema pass rate, hard and soft hallucination rate,
+  LLM-judge score.
+- End-to-end decision: sensitivity and specificity on the escalate-vs-clear binary
+  (with under-triage and over-triage), plus macro-F1.
+
+Build the golden set once, then run all evaluations:
+
+```bash
+python -m data.build_golden_dataset
+python -m evaluation.run_all
+```
+
+`run_all` writes `evaluation/report.md`. Node 5 generations are cached in
+`evaluation/node5_outputs.json`; delete it to regenerate after a prompt or model
+change.

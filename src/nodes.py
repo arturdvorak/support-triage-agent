@@ -191,7 +191,9 @@ def node6_escalation(state: AgentState) -> dict:
     cases_agree = matching > len(state.similar_cases) / 2
 
     # Any uncertainty signal -> defer to a human. Bias toward escalation.
-    if cnn_conf < _LOW_CONF or state.llm_uncertain or not cases_agree:
+    # llm_uncertain is intentionally excluded: routing stays deterministic and
+    # auditable. The flag remains a Node 5 output, it just does not route.
+    if cnn_conf < _LOW_CONF or not cases_agree:
         return {"decision": "escalate_uncertain"}
 
     if state.diagnosis != "normal":
