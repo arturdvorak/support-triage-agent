@@ -10,6 +10,7 @@ from evaluation.metrics import (
     reciprocal_rank,
     ndcg_at_k,
 )
+from evaluation.metrics import macro_f1, sensitivity_specificity
 
 # relevance: case_id -> grade (2 = strong, 1 = weak). Missing id means grade 0.
 REL = {"c1": 2, "c2": 1, "c3": 2}
@@ -48,3 +49,23 @@ def test_ndcg_rewards_strong_first():
     dcg = (2**1 - 1) / math.log2(2) + (2**2 - 1) / math.log2(3)
     idcg = (2**2 - 1) / math.log2(2) + (2**2 - 1) / math.log2(3)
     assert worse == pytest.approx(dcg / idcg)
+
+
+def test_macro_f1_simple():
+    expected = ["a", "a", "b"]
+    predicted = ["a", "b", "b"]
+    # class a: tp=1, fp=0, fn=1 -> f1 = 0.6667
+    # class b: tp=1, fp=1, fn=0 -> f1 = 0.6667
+    assert macro_f1(expected, predicted) == pytest.approx(2 / 3)
+
+
+def test_sensitivity_specificity_collapse():
+    expected = ["escalate_urgent", "auto_clear", "auto_clear", "re_capture"]
+    predicted = ["escalate_urgent", "escalate_routine", "auto_clear", "re_capture"]
+    out = sensitivity_specificity(expected, predicted)
+    # escalate rows: 1 case, caught -> sensitivity 1.0
+    assert out["sensitivity"] == pytest.approx(1.0)
+    # clear rows: 2 cases, 1 wrongly escalated -> specificity 0.5
+    assert out["specificity"] == pytest.approx(0.5)
+    assert out["under_triage"] == pytest.approx(0.0)
+    assert out["over_triage"] == pytest.approx(0.5)
