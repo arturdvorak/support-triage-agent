@@ -133,6 +133,11 @@ def build() -> list[GoldenCase]:
     return cases
 
 
+def load_golden(path: Path = _OUT_PATH) -> list[GoldenCase]:
+    """Read golden.json and parse rows into GoldenCase objects."""
+    return [GoldenCase(**r) for r in json.loads(path.read_text())]
+
+
 def main() -> None:
     cases = build()
     _OUT_PATH.write_text(json.dumps([c.model_dump() for c in cases], indent=2))
